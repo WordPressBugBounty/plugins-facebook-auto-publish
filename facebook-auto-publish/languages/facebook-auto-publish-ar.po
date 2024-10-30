@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: multilang\n"
-"POT-Creation-Date: 2022-07-07 12:47+0530\n"
-"PO-Revision-Date: 2022-07-07 17:08+0530\n"
+"POT-Creation-Date: 2024-09-26 16:31+0530\n"
+"PO-Revision-Date: 2024-09-26 16:34+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ar\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
-"X-Generator: Poedit 3.1\n"
+"X-Generator: Poedit 3.4\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: _e;__\n"
 "X-Poedit-SearchPath-0: admin/settings.php\n"
@@ -44,8 +44,8 @@ msgstr ""
 #: admin/about.php:17
 #, php-format
 msgid ""
-"If you would like to have more features , please try <a href=\"%s\" target="
-"\"_blank\">%s</a> which is a premium version of this plugin. We have "
+"If you would like to have more features , please try <a href=\"%s\" "
+"target=\"_blank\">%s</a> which is a premium version of this plugin. We have "
 "included a quick comparison of the free and premium plugins for your "
 "reference."
 msgstr ""
@@ -78,7 +78,7 @@ msgstr "%s قسط"
 msgid "Supported Media"
 msgstr "الوسائط المدعومة"
 
-#: admin/about.php:35 admin/admin-notices.php:56 admin/metabox.php:236
+#: admin/about.php:35 admin/admin-notices.php:56 admin/metabox.php:303
 msgid "Facebook"
 msgstr "فيسبوك"
 
@@ -111,60 +111,60 @@ msgid "Publish to facebook pages"
 msgstr "انشر على صفحات الفيسبوك"
 
 #: admin/about.php:102
-msgid "Publish to facebook groups"
-msgstr "انشر في مجموعات الفيسبوك"
-
-#: admin/about.php:111
 msgid "Publish to twitter profile"
 msgstr "انشر على تويتر الشخصي"
 
-#: admin/about.php:121
+#: admin/about.php:112
 msgid "Publish to linkedin profile/company pages"
 msgstr "انشر على صفحات الملف الشخصي / الشركة المرتبطة"
 
-#: admin/about.php:130
+#: admin/about.php:121
 msgid "Publish to instagram Business accounts"
 msgstr "انشر على حسابات الأعمال في instagram"
 
-#: admin/about.php:139
+#: admin/about.php:130
 msgid "Publish to tumblr profile"
 msgstr "انشر في ملف تعريف نعرفكم"
 
-#: admin/about.php:149
+#: admin/about.php:140
 msgid "Publish to pinterest boards"
 msgstr "انشر على بينتيريست المجالس"
 
-#: admin/about.php:158
+#: admin/about.php:149
 msgid "Option to add twitter image description for visually impaired people"
 msgstr "خيار إضافة وصف صورة Twitter للأشخاص ضعاف البصر"
 
-#: admin/about.php:167
+#: admin/about.php:158
 msgid "Option to republish existing posts"
 msgstr "خيار لإعادة نشر الوظائف الحالية"
 
-#: admin/about.php:177
+#: admin/about.php:168
 msgid "Publish to multiple social media accounts"
 msgstr "انشر على حسابات وسائط اجتماعية متعددة"
 
-#: admin/about.php:187
+#: admin/about.php:178
 msgid ""
 "Seperate message formats for publishing to multiple social media accounts"
 msgstr "تنسيق رسالة منفصل للنشر على حسابات وسائط اجتماعية متعددة"
 
-#: admin/about.php:197
+#: admin/about.php:188
 msgid "Save auto publish settings of individual posts"
 msgstr "حفظ إعدادات النشر التلقائي للمشاركات الفردية"
 
-#: admin/about.php:207
+#: admin/about.php:198
 msgid ""
 "Hash Tags support for Facebook, Twitter, Linkedin, Instagram, Tumblr and "
 "Pinterest"
 msgstr ""
 "دعم علامات التجزئة لـ فيسبوك و تويتر و ينكدين والانستغرام و بينتيريست و تمبلر"
 
-#: admin/about.php:216
+#: admin/about.php:207
 msgid "Option to use post tags as hash tags"
 msgstr "خيار لاستخدام علامة المنشور كعلامات تصنيف"
+
+#: admin/about.php:216
+msgid "Option to use post categories as hash tags"
+msgstr "خيار لاستخدام فئات المنشورات كعلامات تجزئة"
 
 #: admin/about.php:225
 msgid "Enable/Disable SSL peer verification"
@@ -423,10 +423,10 @@ msgstr "شكرا لك على الاقتراح."
 #: admin/fbap-suggest-feature.php:11 admin/fbap-suggest-feature.php:19
 #: admin/fbap-suggest-feature.php:27 admin/header.php:19 admin/header.php:33
 #: admin/header.php:49 admin/manage-authorizations.php:9
-#: admin/manage-authorizations.php:132 admin/manage-authorizations.php:192
+#: admin/manage-authorizations.php:134 admin/manage-authorizations.php:194
 #: admin/settings.php:32 admin/settings.php:130 admin/settings.php:138
 #: admin/settings.php:147 admin/settings.php:158 admin/settings.php:167
-#: admin/settings.php:182 admin/settings.php:1025 admin/settings.php:1060
+#: admin/settings.php:182 admin/settings.php:1027 admin/settings.php:1062
 msgid "Dismiss"
 msgstr "رفض"
 
@@ -591,97 +591,97 @@ msgstr ""
 "الرجاء تخويل تطبيقالبرنامج المساعد %s المميز بالكامل s ضمن إعدادات Facebook "
 "للوصول إلى هذه الصفحة."
 
-#: admin/manage-authorizations.php:237 admin/menu.php:38
+#: admin/manage-authorizations.php:239 admin/menu.php:38
 msgid "Manage Authorizations"
 msgstr "إدارة التراخيص"
 
-#: admin/manage-authorizations.php:261
+#: admin/manage-authorizations.php:263
 msgid "Current Plan:"
 msgstr "الخطة الحالية:"
 
-#: admin/manage-authorizations.php:263
+#: admin/manage-authorizations.php:265
 msgid "Allowed Facebook users:"
 msgstr "مستخدمو Facebook المسموح لهم:"
 
-#: admin/manage-authorizations.php:264
+#: admin/manage-authorizations.php:266
 msgid "API limit per account :"
 msgstr "حد API لكل حساب:"
 
-#: admin/manage-authorizations.php:264
+#: admin/manage-authorizations.php:266
 msgid "per hour"
 msgstr "في الساعة"
 
-#: admin/manage-authorizations.php:265
+#: admin/manage-authorizations.php:267
 msgid "Package Expiry :"
 msgstr "انتهاء صلاحية الحزمة:"
 
-#: admin/manage-authorizations.php:266
+#: admin/manage-authorizations.php:268
 msgid "Package Status :"
 msgstr "وضع رزمة :"
 
-#: admin/manage-authorizations.php:275
+#: admin/manage-authorizations.php:277
 msgid "Upgrade/Renew"
 msgstr "الترقية / التجديد"
 
-#: admin/manage-authorizations.php:282
+#: admin/manage-authorizations.php:284
 msgid "Show all entries"
 msgstr "إظهار كافة الإدخالات"
 
-#: admin/manage-authorizations.php:283
+#: admin/manage-authorizations.php:285
 msgid "Show entries from current wp installation"
 msgstr "إظهار الإدخالات من تثبيت wp الحالي"
 
-#: admin/manage-authorizations.php:284
+#: admin/manage-authorizations.php:286
 msgid "Show entries from other wp installations"
 msgstr "إظهار الإدخالات من عمليات تثبيت wp الأخرى"
 
-#: admin/manage-authorizations.php:290
+#: admin/manage-authorizations.php:292
 msgid "Facebook username"
 msgstr "اسم مستخدم Facebook"
 
-#: admin/manage-authorizations.php:291
+#: admin/manage-authorizations.php:293
 msgid "Selected pages"
 msgstr "صفحات مختارة"
 
-#: admin/manage-authorizations.php:292
+#: admin/manage-authorizations.php:294
 msgid "Selected groups"
 msgstr "مجموعات مختارة"
 
-#: admin/manage-authorizations.php:294
+#: admin/manage-authorizations.php:296
 #, php-format
 msgid "%s url"
 msgstr "%s url"
 
-#: admin/manage-authorizations.php:297
+#: admin/manage-authorizations.php:299
 msgid "Plugin"
 msgstr "البرنامج المساعد"
 
-#: admin/manage-authorizations.php:299
+#: admin/manage-authorizations.php:301
 #, php-format
 msgid "Account ID %s"
 msgstr "معرف الحساب% s"
 
-#: admin/manage-authorizations.php:301
+#: admin/manage-authorizations.php:303
 msgid "Action"
 msgstr "عمل"
 
-#: admin/manage-authorizations.php:336
+#: admin/manage-authorizations.php:338
 msgid "Not Applicable"
 msgstr "لايمكن تطبيقه"
 
-#: admin/manage-authorizations.php:343 admin/manage-authorizations.php:366
+#: admin/manage-authorizations.php:345 admin/manage-authorizations.php:368
 msgid "Delete"
 msgstr "حذف"
 
-#: admin/manage-authorizations.php:356
+#: admin/manage-authorizations.php:358
 msgid "(Inactive)"
 msgstr "(غير نشط)"
 
-#: admin/manage-authorizations.php:376
+#: admin/manage-authorizations.php:378
 msgid "No Authorizations"
 msgstr "لا تراخيص"
 
-#: admin/manage-authorizations.php:382
+#: admin/manage-authorizations.php:384
 msgid "Unable to connect. Please check your curl and firewall settings"
 msgstr "غير قادر على الاتصال. يرجى التحقق من إعدادات الضفيرة وجدار الحماية"
 
@@ -723,87 +723,87 @@ msgstr "سجل"
 msgid "Suggest a Feature"
 msgstr "اقترح ميزة"
 
-#: admin/metabox.php:244 admin/settings.php:303
+#: admin/metabox.php:311 admin/settings.php:303
 msgid "Enable auto publish post to my facebook account"
 msgstr "تفعيل النشر التلقائي على حسابي في الفيسبوك"
 
-#: admin/metabox.php:247 admin/settings.php:306 admin/settings.php:412
+#: admin/metabox.php:314 admin/settings.php:306 admin/settings.php:412
 #: admin/settings.php:420 admin/settings.php:654 admin/settings.php:663
-#: admin/settings.php:770 admin/settings.php:819 admin/settings.php:828
+#: admin/settings.php:772 admin/settings.php:821 admin/settings.php:830
 msgid "Yes"
 msgstr "نعم"
 
-#: admin/metabox.php:248 admin/settings.php:307 admin/settings.php:413
+#: admin/metabox.php:315 admin/settings.php:307 admin/settings.php:413
 #: admin/settings.php:421 admin/settings.php:655 admin/settings.php:664
-#: admin/settings.php:771 admin/settings.php:820 admin/settings.php:829
+#: admin/settings.php:773 admin/settings.php:822 admin/settings.php:831
 msgid "No"
 msgstr "لا"
 
-#: admin/metabox.php:253 admin/settings.php:380
+#: admin/metabox.php:320 admin/settings.php:380
 msgid "Posting method"
 msgstr "طريقة الإرسال"
 
-#: admin/metabox.php:257 admin/settings.php:386
+#: admin/metabox.php:324 admin/settings.php:386
 msgid "Simple text message"
 msgstr "رسالة نصية بسيطة"
 
-#: admin/metabox.php:261 admin/settings.php:390
+#: admin/metabox.php:328 admin/settings.php:390
 msgid "Upload image to app album"
 msgstr "تحميل الصورة إلى ألبوم التطبيق"
 
-#: admin/metabox.php:263 admin/settings.php:392
+#: admin/metabox.php:330 admin/settings.php:392
 msgid "Upload image to timeline album"
 msgstr "تحميل الصورة إلى ألبوم المخطط الزمني"
 
-#: admin/metabox.php:268 admin/settings.php:397
+#: admin/metabox.php:335 admin/settings.php:397
 msgid "Attach your blog post"
 msgstr "إرفاق وظيفة بلوق الخاص بك"
 
-#: admin/metabox.php:271 admin/settings.php:400
+#: admin/metabox.php:338 admin/settings.php:400
 msgid "Share a link to your blog post"
 msgstr "مشاركة ارتباط إلى وظيفة بلوق الخاص بك"
 
-#: admin/metabox.php:277 admin/settings.php:425
+#: admin/metabox.php:344 admin/settings.php:425
 msgid "Message format for posting"
 msgstr "تنسيق الرسالة للنشر"
 
-#: admin/metabox.php:280 admin/settings.php:428
+#: admin/metabox.php:347 admin/settings.php:428
 msgid "Insert the title of your post."
 msgstr "أدخل عنوان المنشور الخاص بك."
 
-#: admin/metabox.php:281 admin/settings.php:429
+#: admin/metabox.php:348 admin/settings.php:429
 msgid "Insert the URL where your post is displayed."
 msgstr "أدخل عنوان URL حيث يتم عرض منشورك."
 
-#: admin/metabox.php:282 admin/settings.php:430
+#: admin/metabox.php:349 admin/settings.php:430
 msgid "Insert the excerpt of your post."
 msgstr "أدخل مقتطف من رسالتك."
 
-#: admin/metabox.php:283 admin/settings.php:431
+#: admin/metabox.php:350 admin/settings.php:431
 msgid "Insert the description of your post."
 msgstr "أدخل وصف منشورك."
 
-#: admin/metabox.php:284 admin/settings.php:432
+#: admin/metabox.php:351 admin/settings.php:432
 msgid "Insert the name of your blog."
 msgstr "أدخل اسم مدونتك."
 
-#: admin/metabox.php:285 admin/settings.php:433
+#: admin/metabox.php:352 admin/settings.php:433
 msgid "Insert the nicename of the author."
 msgstr "أدخل اسم المؤلف."
 
-#: admin/metabox.php:286 admin/settings.php:434
+#: admin/metabox.php:353 admin/settings.php:434
 msgid "Insert the ID of your post."
 msgstr "أدخل معرف منشورك."
 
-#: admin/metabox.php:287 admin/settings.php:435
+#: admin/metabox.php:354 admin/settings.php:435
 msgid "Insert the publish date of your post."
 msgstr "أدخل تاريخ نشر رسالتك."
 
-#: admin/metabox.php:288 admin/settings.php:436
+#: admin/metabox.php:355 admin/settings.php:436
 msgid "Insert the display name of the author."
 msgstr "أدخل اسم عرض المؤلف."
 
-#: admin/metabox.php:293 admin/settings.php:440
+#: admin/metabox.php:360 admin/settings.php:440
 msgid "Select"
 msgstr "اختار"
 
@@ -1115,35 +1115,35 @@ msgstr "ممكن"
 msgid "Disabled"
 msgstr "تعطيل"
 
-#: admin/settings.php:755
-msgid "Use settings from post creation or post updation"
-msgstr "استخدم الإعدادات من إنشاء المنشور أو ما بعد التحديث"
+#: admin/settings.php:755 admin/settings.php:764
+msgid "Use metabox settings"
+msgstr "استخدم إعدادات metabox"
 
 #: admin/settings.php:759
 msgid "Auto publish on creating posts/pages/custom post types"
 msgstr "النشر التلقائي عند إنشاء منشورات / صفحات / أنواع منشورات مخصصة"
 
-#: admin/settings.php:768
+#: admin/settings.php:770
 msgid "Enable SSL peer verification in remote requests"
 msgstr "تمكين التحقق من الأقران SSL في الطلبات البعيدة"
 
-#: admin/settings.php:776
+#: admin/settings.php:778
 msgid "Apply filters during publishing"
 msgstr "تطبيق المرشحات أثناء النشر"
 
-#: admin/settings.php:813
+#: admin/settings.php:815
 msgid "Other Settings"
 msgstr "اعدادات اخرى"
 
-#: admin/settings.php:816
+#: admin/settings.php:818
 msgid "Enable credit link to author"
 msgstr "تمكين ارتباط الائتمان للمؤلف"
 
-#: admin/settings.php:825
+#: admin/settings.php:827
 msgid "Enable premium version ads"
 msgstr "تمكين الإصدار المتميز للإعلانات"
 
-#: admin/settings.php:839
+#: admin/settings.php:841
 msgid "Update Settings"
 msgstr "تحديث الاعدادات"
 

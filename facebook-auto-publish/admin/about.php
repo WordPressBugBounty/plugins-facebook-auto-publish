@@ -99,15 +99,6 @@ if( !defined('ABSPATH') ){ exit();}
 		</td>
 	</tr>
 	<tr>
-		<td> <?php _e('Publish to facebook groups','facebook-auto-publish'); ?> </td>
-		<td><img src="<?php echo plugins_url("images/cross.png",XYZ_FBAP_PLUGIN_FILE);?>">
-		</td>
-		<td><img src="<?php echo plugins_url("images/tick.png",XYZ_FBAP_PLUGIN_FILE);?>">
-		</td>
-		<td><img src="<?php echo plugins_url("images/tick.png",XYZ_FBAP_PLUGIN_FILE);?>">
-		</td>
-	</tr>
-	<tr>
 		<td> <?php _e('Publish to twitter profile','facebook-auto-publish'); ?> </td>
 		<td><img src="<?php echo plugins_url("images/cross.png",XYZ_FBAP_PLUGIN_FILE);?>">
 		</td>
@@ -214,6 +205,15 @@ if( !defined('ABSPATH') ){ exit();}
 	</tr>
 	<tr>
 		<td> <?php _e('Option to use post tags as hash tags','facebook-auto-publish'); ?> </td>
+		<td><img src="<?php echo plugins_url("images/cross.png",XYZ_FBAP_PLUGIN_FILE);?>">
+		</td>
+		<td><img src="<?php echo plugins_url("images/tick.png",XYZ_FBAP_PLUGIN_FILE);?>">
+		</td>
+		<td><img src="<?php echo plugins_url("images/tick.png",XYZ_FBAP_PLUGIN_FILE);?>">
+		</td>
+	</tr>
+	<tr>
+		<td> <?php _e('Option to use post categories as hash tags','facebook-auto-publish'); ?> </td>
 		<td><img src="<?php echo plugins_url("images/cross.png",XYZ_FBAP_PLUGIN_FILE);?>">
 		</td>
 		<td><img src="<?php echo plugins_url("images/tick.png",XYZ_FBAP_PLUGIN_FILE);?>">

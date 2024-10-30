@@ -95,7 +95,7 @@ function xyz_fbap_insert_og_image_for_fb(){
  		$post=get_post();
  		if (!empty($post) &&  get_option('xyz_fbap_enforce_og_tags')==1){
 	$postid= $post->ID;
-	if(isset($postid ) && $postid>0)
+	if(isset($postid ) && $postid>0  && isset($_SERVER["HTTP_USER_AGENT"]))
 	{
 		$xyz_fbap_apply_filters=get_option('xyz_fbap_apply_filters');
 		$get_post_meta_insert_og=0;

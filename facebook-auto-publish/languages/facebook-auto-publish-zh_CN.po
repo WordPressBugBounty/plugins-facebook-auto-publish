@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: multilang\n"
-"POT-Creation-Date: 2022-07-08 11:50+0530\n"
-"PO-Revision-Date: 2022-07-08 11:50+0530\n"
+"POT-Creation-Date: 2024-09-26 16:43+0530\n"
+"PO-Revision-Date: 2024-09-26 16:43+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.1\n"
+"X-Generator: Poedit 3.4\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SearchPath-0: facebook-auto-publish.php\n"
@@ -43,8 +43,8 @@ msgstr ""
 #: admin/about.php:17
 #, php-format
 msgid ""
-"If you would like to have more features , please try <a href=\"%s\" target="
-"\"_blank\">%s</a> which is a premium version of this plugin. We have "
+"If you would like to have more features , please try <a href=\"%s\" "
+"target=\"_blank\">%s</a> which is a premium version of this plugin. We have "
 "included a quick comparison of the free and premium plugins for your "
 "reference."
 msgstr ""
@@ -76,7 +76,7 @@ msgstr "%s 溢价"
 msgid "Supported Media"
 msgstr "支持的媒体"
 
-#: admin/about.php:35 admin/admin-notices.php:56 admin/metabox.php:236
+#: admin/about.php:35 admin/admin-notices.php:56 admin/metabox.php:303
 msgid "Facebook"
 msgstr "脸书"
 
@@ -109,58 +109,58 @@ msgid "Publish to facebook pages"
 msgstr "发布到 脸书 页面"
 
 #: admin/about.php:102
-msgid "Publish to facebook groups"
-msgstr "发布到 脸书 群组"
-
-#: admin/about.php:111
 msgid "Publish to twitter profile"
 msgstr "发布到 推特 个人资料"
 
-#: admin/about.php:121
+#: admin/about.php:112
 msgid "Publish to linkedin profile/company pages"
 msgstr "发布到领英个人资料/公司页面"
 
-#: admin/about.php:130
+#: admin/about.php:121
 msgid "Publish to instagram Business accounts"
 msgstr "发布到 Instagram 企业帐户"
 
-#: admin/about.php:139
+#: admin/about.php:130
 msgid "Publish to tumblr profile"
 msgstr "发布到 棒棒哒 个人资料"
 
-#: admin/about.php:149
+#: admin/about.php:140
 msgid "Publish to pinterest boards"
 msgstr "发布到 pinterest 板"
 
-#: admin/about.php:158
+#: admin/about.php:149
 msgid "Option to add twitter image description for visually impaired people"
 msgstr "为视障人士添加 推特 图像描述的选项"
 
-#: admin/about.php:167
+#: admin/about.php:158
 msgid "Option to republish existing posts"
 msgstr "重新发布现有帖子的选项"
 
-#: admin/about.php:177
+#: admin/about.php:168
 msgid "Publish to multiple social media accounts"
 msgstr "发布到多个社交媒体帐户"
 
-#: admin/about.php:187
+#: admin/about.php:178
 msgid ""
 "Seperate message formats for publishing to multiple social media accounts"
 msgstr "用于发布到多个社交媒体帐户的单独消息格式"
 
-#: admin/about.php:197
+#: admin/about.php:188
 msgid "Save auto publish settings of individual posts"
 msgstr "保存单个帖子的自动发布设置"
 
-#: admin/about.php:207
+#: admin/about.php:198
 msgid ""
 "Hash Tags support for Facebook, Twitter, Linkedin, Instagram, Tumblr and "
 "Pinterest"
 msgstr "哈希标签支持 脸书、推特、领英、Instagram、棒棒哒 和 Pinterest"
 
-#: admin/about.php:216
+#: admin/about.php:207
 msgid "Option to use post tags as hash tags"
+msgstr "使用帖子标签作为哈希标签的选项"
+
+#: admin/about.php:216
+msgid "Option to use post categories as hash tags"
 msgstr "使用帖子标签作为哈希标签的选项"
 
 #: admin/about.php:225
@@ -413,10 +413,10 @@ msgstr "感谢您的建议。"
 #: admin/fbap-suggest-feature.php:11 admin/fbap-suggest-feature.php:19
 #: admin/fbap-suggest-feature.php:27 admin/header.php:19 admin/header.php:33
 #: admin/header.php:49 admin/manage-authorizations.php:9
-#: admin/manage-authorizations.php:132 admin/manage-authorizations.php:192
+#: admin/manage-authorizations.php:134 admin/manage-authorizations.php:194
 #: admin/settings.php:32 admin/settings.php:130 admin/settings.php:138
 #: admin/settings.php:147 admin/settings.php:158 admin/settings.php:167
-#: admin/settings.php:182 admin/settings.php:1025 admin/settings.php:1060
+#: admin/settings.php:182 admin/settings.php:1027 admin/settings.php:1062
 msgid "Dismiss"
 msgstr "清除"
 
@@ -575,97 +575,97 @@ msgstr "%s 包更新成功。"
 msgid "Please authorize %s app under Facebook settings to access this page."
 msgstr "请在 Facebook 设置下授权 %s 应用访问此页面。"
 
-#: admin/manage-authorizations.php:237 admin/menu.php:38
+#: admin/manage-authorizations.php:239 admin/menu.php:38
 msgid "Manage Authorizations"
 msgstr "管理授权"
 
-#: admin/manage-authorizations.php:261
+#: admin/manage-authorizations.php:263
 msgid "Current Plan:"
 msgstr "当前计划："
 
-#: admin/manage-authorizations.php:263
+#: admin/manage-authorizations.php:265
 msgid "Allowed Facebook users:"
 msgstr "允许的 脸书 用户："
 
-#: admin/manage-authorizations.php:264
+#: admin/manage-authorizations.php:266
 msgid "API limit per account :"
 msgstr "每个帐户的 API 限制："
 
-#: admin/manage-authorizations.php:264
+#: admin/manage-authorizations.php:266
 msgid "per hour"
 msgstr "每小时"
 
-#: admin/manage-authorizations.php:265
+#: admin/manage-authorizations.php:267
 msgid "Package Expiry :"
 msgstr "Package Expiry :"
 
-#: admin/manage-authorizations.php:266
+#: admin/manage-authorizations.php:268
 msgid "Package Status :"
 msgstr "包裹状态："
 
-#: admin/manage-authorizations.php:275
+#: admin/manage-authorizations.php:277
 msgid "Upgrade/Renew"
 msgstr "升级/更新"
 
-#: admin/manage-authorizations.php:282
+#: admin/manage-authorizations.php:284
 msgid "Show all entries"
 msgstr "显示所有条目"
 
-#: admin/manage-authorizations.php:283
+#: admin/manage-authorizations.php:285
 msgid "Show entries from current wp installation"
 msgstr "显示当前 wp 安装的条目"
 
-#: admin/manage-authorizations.php:284
+#: admin/manage-authorizations.php:286
 msgid "Show entries from other wp installations"
 msgstr "显示来自其他 wp 安装的条目"
 
-#: admin/manage-authorizations.php:290
+#: admin/manage-authorizations.php:292
 msgid "Facebook username"
 msgstr "脸书用户名"
 
-#: admin/manage-authorizations.php:291
+#: admin/manage-authorizations.php:293
 msgid "Selected pages"
 msgstr "选定页面"
 
-#: admin/manage-authorizations.php:292
+#: admin/manage-authorizations.php:294
 msgid "Selected groups"
 msgstr "选定的组"
 
-#: admin/manage-authorizations.php:294
+#: admin/manage-authorizations.php:296
 #, php-format
 msgid "%s url"
 msgstr "%s 网址"
 
-#: admin/manage-authorizations.php:297
+#: admin/manage-authorizations.php:299
 msgid "Plugin"
 msgstr "插件"
 
-#: admin/manage-authorizations.php:299
+#: admin/manage-authorizations.php:301
 #, php-format
 msgid "Account ID %s"
 msgstr "帐户 ID %s"
 
-#: admin/manage-authorizations.php:301
+#: admin/manage-authorizations.php:303
 msgid "Action"
 msgstr "行动"
 
-#: admin/manage-authorizations.php:336
+#: admin/manage-authorizations.php:338
 msgid "Not Applicable"
 msgstr "不适用"
 
-#: admin/manage-authorizations.php:343 admin/manage-authorizations.php:366
+#: admin/manage-authorizations.php:345 admin/manage-authorizations.php:368
 msgid "Delete"
 msgstr "删除"
 
-#: admin/manage-authorizations.php:356
+#: admin/manage-authorizations.php:358
 msgid "(Inactive)"
 msgstr "（不活动）"
 
-#: admin/manage-authorizations.php:376
+#: admin/manage-authorizations.php:378
 msgid "No Authorizations"
 msgstr "无授权"
 
-#: admin/manage-authorizations.php:382
+#: admin/manage-authorizations.php:384
 msgid "Unable to connect. Please check your curl and firewall settings"
 msgstr "无法连接。请检查您的 curl 和防火墙设置"
 
@@ -707,87 +707,87 @@ msgstr "日志"
 msgid "Suggest a Feature"
 msgstr "建议一个功能"
 
-#: admin/metabox.php:244 admin/settings.php:303
+#: admin/metabox.php:311 admin/settings.php:303
 msgid "Enable auto publish post to my facebook account"
 msgstr "启用自动将帖子发布到我的 脸书 帐户"
 
-#: admin/metabox.php:247 admin/settings.php:306 admin/settings.php:412
+#: admin/metabox.php:314 admin/settings.php:306 admin/settings.php:412
 #: admin/settings.php:420 admin/settings.php:654 admin/settings.php:663
-#: admin/settings.php:770 admin/settings.php:819 admin/settings.php:828
+#: admin/settings.php:772 admin/settings.php:821 admin/settings.php:830
 msgid "Yes"
 msgstr "没有人"
 
-#: admin/metabox.php:248 admin/settings.php:307 admin/settings.php:413
+#: admin/metabox.php:315 admin/settings.php:307 admin/settings.php:413
 #: admin/settings.php:421 admin/settings.php:655 admin/settings.php:664
-#: admin/settings.php:771 admin/settings.php:820 admin/settings.php:829
+#: admin/settings.php:773 admin/settings.php:822 admin/settings.php:831
 msgid "No"
 msgstr "不"
 
-#: admin/metabox.php:253 admin/settings.php:380
+#: admin/metabox.php:320 admin/settings.php:380
 msgid "Posting method"
 msgstr "发帖方式"
 
-#: admin/metabox.php:257 admin/settings.php:386
+#: admin/metabox.php:324 admin/settings.php:386
 msgid "Simple text message"
 msgstr "简单的短信"
 
-#: admin/metabox.php:261 admin/settings.php:390
+#: admin/metabox.php:328 admin/settings.php:390
 msgid "Upload image to app album"
 msgstr "上传图片到应用相册"
 
-#: admin/metabox.php:263 admin/settings.php:392
+#: admin/metabox.php:330 admin/settings.php:392
 msgid "Upload image to timeline album"
 msgstr "将图像上传到时间线相册"
 
-#: admin/metabox.php:268 admin/settings.php:397
+#: admin/metabox.php:335 admin/settings.php:397
 msgid "Attach your blog post"
 msgstr "附上您的博文"
 
-#: admin/metabox.php:271 admin/settings.php:400
+#: admin/metabox.php:338 admin/settings.php:400
 msgid "Share a link to your blog post"
 msgstr "分享指向您的博客文章的链接"
 
-#: admin/metabox.php:277 admin/settings.php:425
+#: admin/metabox.php:344 admin/settings.php:425
 msgid "Message format for posting"
 msgstr "发帖的消息格式"
 
-#: admin/metabox.php:280 admin/settings.php:428
+#: admin/metabox.php:347 admin/settings.php:428
 msgid "Insert the title of your post."
 msgstr "插入帖子的标题。"
 
-#: admin/metabox.php:281 admin/settings.php:429
+#: admin/metabox.php:348 admin/settings.php:429
 msgid "Insert the URL where your post is displayed."
 msgstr "插入显示您的帖子的 URL。"
 
-#: admin/metabox.php:282 admin/settings.php:430
+#: admin/metabox.php:349 admin/settings.php:430
 msgid "Insert the excerpt of your post."
 msgstr "插入您的帖子的摘录。"
 
-#: admin/metabox.php:283 admin/settings.php:431
+#: admin/metabox.php:350 admin/settings.php:431
 msgid "Insert the description of your post."
 msgstr "插入您的帖子的描述。"
 
-#: admin/metabox.php:284 admin/settings.php:432
+#: admin/metabox.php:351 admin/settings.php:432
 msgid "Insert the name of your blog."
 msgstr "插入您的博客名称。"
 
-#: admin/metabox.php:285 admin/settings.php:433
+#: admin/metabox.php:352 admin/settings.php:433
 msgid "Insert the nicename of the author."
 msgstr "插入作者的昵称。"
 
-#: admin/metabox.php:286 admin/settings.php:434
+#: admin/metabox.php:353 admin/settings.php:434
 msgid "Insert the ID of your post."
 msgstr "插入您的帖子的 ID。"
 
-#: admin/metabox.php:287 admin/settings.php:435
+#: admin/metabox.php:354 admin/settings.php:435
 msgid "Insert the publish date of your post."
 msgstr "插入帖子的发布日期。"
 
-#: admin/metabox.php:288 admin/settings.php:436
+#: admin/metabox.php:355 admin/settings.php:436
 msgid "Insert the display name of the author."
 msgstr "插入作者的显示名称。"
 
-#: admin/metabox.php:293 admin/settings.php:440
+#: admin/metabox.php:360 admin/settings.php:440
 msgid "Select"
 msgstr "选择"
 
@@ -1092,34 +1092,35 @@ msgstr "启用"
 msgid "Disabled"
 msgstr "禁用"
 
-#: admin/settings.php:755
-msgid "Use settings from post creation or post updation"
-msgstr "使用帖子创建或帖子更新中的设置"
+#: admin/settings.php:755 admin/settings.php:764
+msgid "Use metabox settings"
+msgstr "通用设置"
 
 #: admin/settings.php:759
 msgid "Auto publish on creating posts/pages/custom post types"
 msgstr "在创建帖子/页面/自定义帖子类型时自动发布"
-#: admin/settings.php:768
+
+#: admin/settings.php:770
 msgid "Enable SSL peer verification in remote requests"
 msgstr "在远程请求中启用 SSL 对等验证"
 
-#: admin/settings.php:776
+#: admin/settings.php:778
 msgid "Apply filters during publishing"
 msgstr "在发布期间应用过滤器"
 
-#: admin/settings.php:813
+#: admin/settings.php:815
 msgid "Other Settings"
 msgstr "其他设置"
 
-#: admin/settings.php:816
+#: admin/settings.php:818
 msgid "Enable credit link to author"
 msgstr "启用作者的信用链接"
 
-#: admin/settings.php:825
+#: admin/settings.php:827
 msgid "Enable premium version ads"
 msgstr "启用高级版广告"
 
-#: admin/settings.php:839
+#: admin/settings.php:841
 msgid "Update Settings"
 msgstr "更新设置"
 

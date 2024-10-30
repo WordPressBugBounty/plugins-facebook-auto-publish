@@ -85,7 +85,9 @@ margin-left: 5px;
 <script type="text/javascript">
 jQuery(document).ready(function() {
 	jQuery('#auth_entries_div').show();
-	jQuery("#show_all").attr('checked', true);
+	jQuery("#show_same_domain").attr('checked', true);
+	jQuery('#fbap_manage_auth_table tr:has(td.diff_domain)').hide();
+	jQuery('#fbap_manage_auth_table tr:has(td.same_domain)').show();
 		
 	jQuery("#show_all").click(function(){
 		jQuery('#fbap_manage_auth_table tr:has(td.diff_domain)').show();

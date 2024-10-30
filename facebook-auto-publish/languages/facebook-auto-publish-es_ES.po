@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: multilang\n"
-"POT-Creation-Date: 2022-07-08 11:23+0530\n"
-"PO-Revision-Date: 2022-07-08 11:38+0530\n"
+"POT-Creation-Date: 2024-09-26 16:36+0530\n"
+"PO-Revision-Date: 2024-09-26 16:37+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1\n"
+"X-Generator: Poedit 3.4\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: _e;__\n"
 "X-Poedit-SearchPath-0: admin/settings.php\n"
@@ -44,8 +44,8 @@ msgstr ""
 #: admin/about.php:17
 #, php-format
 msgid ""
-"If you would like to have more features , please try <a href=\"%s\" target="
-"\"_blank\">%s</a> which is a premium version of this plugin. We have "
+"If you would like to have more features , please try <a href=\"%s\" "
+"target=\"_blank\">%s</a> which is a premium version of this plugin. We have "
 "included a quick comparison of the free and premium plugins for your "
 "reference."
 msgstr ""
@@ -79,7 +79,7 @@ msgstr "%s premium"
 msgid "Supported Media"
 msgstr "Medios compatibles"
 
-#: admin/about.php:35 admin/admin-notices.php:56 admin/metabox.php:236
+#: admin/about.php:35 admin/admin-notices.php:56 admin/metabox.php:303
 msgid "Facebook"
 msgstr "Facebook"
 
@@ -112,57 +112,53 @@ msgid "Publish to facebook pages"
 msgstr "Publicar en paginas de facebook"
 
 #: admin/about.php:102
-msgid "Publish to facebook groups"
-msgstr "Publicar en grupos de facebook"
-
-#: admin/about.php:111
 msgid "Publish to twitter profile"
 msgstr "Publicar en perfil de Gorjeo"
 
-#: admin/about.php:121
+#: admin/about.php:112
 msgid "Publish to linkedin profile/company pages"
 msgstr "Publicar en las páginas de perfil/empresa de Linkedin"
 
-#: admin/about.php:130
+#: admin/about.php:121
 msgid "Publish to instagram Business accounts"
 msgstr "Publicar en cuentas comerciales de instagram"
 
-#: admin/about.php:139
+#: admin/about.php:130
 msgid "Publish to tumblr profile"
 msgstr "Publicar en perfil de tumblr"
 
-#: admin/about.php:149
+#: admin/about.php:140
 msgid "Publish to pinterest boards"
 msgstr "Publicar en tableros de pinterest"
 
-#: admin/about.php:158
+#: admin/about.php:149
 msgid "Option to add twitter image description for visually impaired people"
 msgstr ""
 "Opción para agregar una descripción de la imagen de twitter para personas "
 "con discapacidad visual"
 
-#: admin/about.php:167
+#: admin/about.php:158
 msgid "Option to republish existing posts"
 msgstr "Opción para volver a publicar publicaciones existentes"
 
-#: admin/about.php:177
+#: admin/about.php:168
 msgid "Publish to multiple social media accounts"
 msgstr "Publicar en varias cuentas de redes sociales"
 
-#: admin/about.php:187
+#: admin/about.php:178
 msgid ""
 "Seperate message formats for publishing to multiple social media accounts"
 msgstr ""
 "Formato de mensaje separado para publicar en múltiples cuentas de redes "
 "sociales"
 
-#: admin/about.php:197
+#: admin/about.php:188
 msgid "Save auto publish settings of individual posts"
 msgstr ""
 "Guardar la configuración de publicación automática de publicaciones "
 "individuales"
 
-#: admin/about.php:207
+#: admin/about.php:198
 msgid ""
 "Hash Tags support for Facebook, Twitter, Linkedin, Instagram, Tumblr and "
 "Pinterest"
@@ -170,8 +166,12 @@ msgstr ""
 "Compatibilidad con etiquetas hash para Facebook, Gorjeo, Instagram, "
 "Linkedin, Pinterest y Tumblr"
 
-#: admin/about.php:216
+#: admin/about.php:207
 msgid "Option to use post tags as hash tags"
+msgstr "Opción para usar la etiqueta de publicación como hashtags"
+
+#: admin/about.php:216
+msgid "Option to use post categories as hash tags"
 msgstr "Opción para usar la etiqueta de publicación como hashtags"
 
 #: admin/about.php:225
@@ -447,10 +447,10 @@ msgstr "Gracias por la sugerencia."
 #: admin/fbap-suggest-feature.php:11 admin/fbap-suggest-feature.php:19
 #: admin/fbap-suggest-feature.php:27 admin/header.php:19 admin/header.php:33
 #: admin/header.php:49 admin/manage-authorizations.php:9
-#: admin/manage-authorizations.php:132 admin/manage-authorizations.php:192
+#: admin/manage-authorizations.php:134 admin/manage-authorizations.php:194
 #: admin/settings.php:32 admin/settings.php:130 admin/settings.php:138
 #: admin/settings.php:147 admin/settings.php:158 admin/settings.php:167
-#: admin/settings.php:182 admin/settings.php:1025 admin/settings.php:1060
+#: admin/settings.php:182 admin/settings.php:1027 admin/settings.php:1062
 msgid "Dismiss"
 msgstr "Rechazar"
 
@@ -616,97 +616,97 @@ msgstr ""
 "Autorice la aplicación %s en la configuración de Facebook para acceder a "
 "esta página."
 
-#: admin/manage-authorizations.php:237 admin/menu.php:38
+#: admin/manage-authorizations.php:239 admin/menu.php:38
 msgid "Manage Authorizations"
 msgstr "Administrar autorizaciones"
 
-#: admin/manage-authorizations.php:261
+#: admin/manage-authorizations.php:263
 msgid "Current Plan:"
 msgstr "Plan actual:"
 
-#: admin/manage-authorizations.php:263
+#: admin/manage-authorizations.php:265
 msgid "Allowed Facebook users:"
 msgstr "Usuarios de Facebook permitidos:"
 
-#: admin/manage-authorizations.php:264
+#: admin/manage-authorizations.php:266
 msgid "API limit per account :"
 msgstr "Límite de API por cuenta:"
 
-#: admin/manage-authorizations.php:264
+#: admin/manage-authorizations.php:266
 msgid "per hour"
 msgstr "por hora"
 
-#: admin/manage-authorizations.php:265
+#: admin/manage-authorizations.php:267
 msgid "Package Expiry :"
 msgstr "Caducidad del paquete:"
 
-#: admin/manage-authorizations.php:266
+#: admin/manage-authorizations.php:268
 msgid "Package Status :"
 msgstr "Estado del paquete :"
 
-#: admin/manage-authorizations.php:275
+#: admin/manage-authorizations.php:277
 msgid "Upgrade/Renew"
 msgstr "Actualizar/Renovar"
 
-#: admin/manage-authorizations.php:282
+#: admin/manage-authorizations.php:284
 msgid "Show all entries"
 msgstr "Mostrar todas las entradas"
 
-#: admin/manage-authorizations.php:283
+#: admin/manage-authorizations.php:285
 msgid "Show entries from current wp installation"
 msgstr "Mostrar entradas de la instalación actual de wp"
 
-#: admin/manage-authorizations.php:284
+#: admin/manage-authorizations.php:286
 msgid "Show entries from other wp installations"
 msgstr "Mostrar entradas de otras instalaciones de wp"
 
-#: admin/manage-authorizations.php:290
+#: admin/manage-authorizations.php:292
 msgid "Facebook username"
 msgstr "Nombre de usuario de Facebook"
 
-#: admin/manage-authorizations.php:291
+#: admin/manage-authorizations.php:293
 msgid "Selected pages"
 msgstr "Páginas seleccionadas"
 
-#: admin/manage-authorizations.php:292
+#: admin/manage-authorizations.php:294
 msgid "Selected groups"
 msgstr "Grupos seleccionados"
 
-#: admin/manage-authorizations.php:294
+#: admin/manage-authorizations.php:296
 #, php-format
 msgid "%s url"
 msgstr "URL de %s"
 
-#: admin/manage-authorizations.php:297
+#: admin/manage-authorizations.php:299
 msgid "Plugin"
 msgstr "Plugin"
 
-#: admin/manage-authorizations.php:299
+#: admin/manage-authorizations.php:301
 #, php-format
 msgid "Account ID %s"
 msgstr "ID de cuenta %s"
 
-#: admin/manage-authorizations.php:301
+#: admin/manage-authorizations.php:303
 msgid "Action"
 msgstr "Acción"
 
-#: admin/manage-authorizations.php:336
+#: admin/manage-authorizations.php:338
 msgid "Not Applicable"
 msgstr "No aplica"
 
-#: admin/manage-authorizations.php:343 admin/manage-authorizations.php:366
+#: admin/manage-authorizations.php:345 admin/manage-authorizations.php:368
 msgid "Delete"
 msgstr "Borrar"
 
-#: admin/manage-authorizations.php:356
+#: admin/manage-authorizations.php:358
 msgid "(Inactive)"
 msgstr "(Inactiva)"
 
-#: admin/manage-authorizations.php:376
+#: admin/manage-authorizations.php:378
 msgid "No Authorizations"
 msgstr "Sin autorizaciones"
 
-#: admin/manage-authorizations.php:382
+#: admin/manage-authorizations.php:384
 msgid "Unable to connect. Please check your curl and firewall settings"
 msgstr "No puede conectarse. Verifique su configuración de curl y firewall"
 
@@ -748,88 +748,88 @@ msgstr "Registros"
 msgid "Suggest a Feature"
 msgstr "Sugerir una característica"
 
-#: admin/metabox.php:244 admin/settings.php:303
+#: admin/metabox.php:311 admin/settings.php:303
 msgid "Enable auto publish post to my facebook account"
 msgstr ""
 "Habilitar la publicación automática de publicaciones en mi cuenta de Facebook"
 
-#: admin/metabox.php:247 admin/settings.php:306 admin/settings.php:412
+#: admin/metabox.php:314 admin/settings.php:306 admin/settings.php:412
 #: admin/settings.php:420 admin/settings.php:654 admin/settings.php:663
-#: admin/settings.php:770 admin/settings.php:819 admin/settings.php:828
+#: admin/settings.php:772 admin/settings.php:821 admin/settings.php:830
 msgid "Yes"
 msgstr "Sí"
 
-#: admin/metabox.php:248 admin/settings.php:307 admin/settings.php:413
+#: admin/metabox.php:315 admin/settings.php:307 admin/settings.php:413
 #: admin/settings.php:421 admin/settings.php:655 admin/settings.php:664
-#: admin/settings.php:771 admin/settings.php:820 admin/settings.php:829
+#: admin/settings.php:773 admin/settings.php:822 admin/settings.php:831
 msgid "No"
 msgstr "No"
 
-#: admin/metabox.php:253 admin/settings.php:380
+#: admin/metabox.php:320 admin/settings.php:380
 msgid "Posting method"
 msgstr "Método de publicación"
 
-#: admin/metabox.php:257 admin/settings.php:386
+#: admin/metabox.php:324 admin/settings.php:386
 msgid "Simple text message"
 msgstr "Mensaje de texto sencillo"
 
-#: admin/metabox.php:261 admin/settings.php:390
+#: admin/metabox.php:328 admin/settings.php:390
 msgid "Upload image to app album"
 msgstr "Subir imagen al álbum de la aplicación"
 
-#: admin/metabox.php:263 admin/settings.php:392
+#: admin/metabox.php:330 admin/settings.php:392
 msgid "Upload image to timeline album"
 msgstr "Subir imagen al álbum de la línea de tiempo"
 
-#: admin/metabox.php:268 admin/settings.php:397
+#: admin/metabox.php:335 admin/settings.php:397
 msgid "Attach your blog post"
 msgstr "Adjunte su publicación de blog"
 
-#: admin/metabox.php:271 admin/settings.php:400
+#: admin/metabox.php:338 admin/settings.php:400
 msgid "Share a link to your blog post"
 msgstr "Comparte un enlace a tu entrada de blog"
 
-#: admin/metabox.php:277 admin/settings.php:425
+#: admin/metabox.php:344 admin/settings.php:425
 msgid "Message format for posting"
 msgstr "Formato de mensaje para publicar"
 
-#: admin/metabox.php:280 admin/settings.php:428
+#: admin/metabox.php:347 admin/settings.php:428
 msgid "Insert the title of your post."
 msgstr "Inserta el título de tu publicación."
 
-#: admin/metabox.php:281 admin/settings.php:429
+#: admin/metabox.php:348 admin/settings.php:429
 msgid "Insert the URL where your post is displayed."
 msgstr "Inserta la URL donde se muestra tu publicación."
 
-#: admin/metabox.php:282 admin/settings.php:430
+#: admin/metabox.php:349 admin/settings.php:430
 msgid "Insert the excerpt of your post."
 msgstr "Inserta el extracto de tu publicación."
 
-#: admin/metabox.php:283 admin/settings.php:431
+#: admin/metabox.php:350 admin/settings.php:431
 msgid "Insert the description of your post."
 msgstr "Inserta la descripción de tu publicación."
 
-#: admin/metabox.php:284 admin/settings.php:432
+#: admin/metabox.php:351 admin/settings.php:432
 msgid "Insert the name of your blog."
 msgstr "Inserta el nombre de tu blog."
 
-#: admin/metabox.php:285 admin/settings.php:433
+#: admin/metabox.php:352 admin/settings.php:433
 msgid "Insert the nicename of the author."
 msgstr "Inserte el bonito nombre del autor."
 
-#: admin/metabox.php:286 admin/settings.php:434
+#: admin/metabox.php:353 admin/settings.php:434
 msgid "Insert the ID of your post."
 msgstr "Inserta el ID de tu publicación."
 
-#: admin/metabox.php:287 admin/settings.php:435
+#: admin/metabox.php:354 admin/settings.php:435
 msgid "Insert the publish date of your post."
 msgstr "Inserta la fecha de publicación de tu publicación."
 
-#: admin/metabox.php:288 admin/settings.php:436
+#: admin/metabox.php:355 admin/settings.php:436
 msgid "Insert the display name of the author."
 msgstr "Insertar el nombre para mostrar de la autora."
 
-#: admin/metabox.php:293 admin/settings.php:440
+#: admin/metabox.php:360 admin/settings.php:440
 msgid "Select"
 msgstr "Seleccione"
 
@@ -937,8 +937,8 @@ msgid ""
 "For detailed step by step instructions <b><a href=\"%s\" target=\"_blank\"> "
 "Click here."
 msgstr ""
-"Para obtener instrucciones detalladas paso a paso <b><a href=\"%s\" target="
-"\"_blank\"> haga clic aquí."
+"Para obtener instrucciones detalladas paso a paso <b><a href=\"%s\" "
+"target=\"_blank\"> haga clic aquí."
 
 #: admin/settings.php:300
 msgid "All fields given below are mandatory"
@@ -1153,11 +1153,9 @@ msgstr "Activada"
 msgid "Disabled"
 msgstr "Discapacitada"
 
-#: admin/settings.php:755
-msgid "Use settings from post creation or post updation"
-msgstr ""
-"Use la configuración de la creación de publicaciones o la actualización de "
-"publicaciones"
+#: admin/settings.php:755 admin/settings.php:764
+msgid "Use metabox settings"
+msgstr "Configuración metabox"
 
 #: admin/settings.php:759
 msgid "Auto publish on creating posts/pages/custom post types"
@@ -1165,27 +1163,27 @@ msgstr ""
 "Publicación automática al crear publicaciones/páginas/tipos de publicaciones "
 "personalizadas"
 
-#: admin/settings.php:768
+#: admin/settings.php:770
 msgid "Enable SSL peer verification in remote requests"
 msgstr "Habilite la verificación de pares SSL en solicitudes remotas"
 
-#: admin/settings.php:776
+#: admin/settings.php:778
 msgid "Apply filters during publishing"
 msgstr "Aplicar filtros durante la publicación"
 
-#: admin/settings.php:813
+#: admin/settings.php:815
 msgid "Other Settings"
 msgstr "Otros ajustes"
 
-#: admin/settings.php:816
+#: admin/settings.php:818
 msgid "Enable credit link to author"
 msgstr "Habilitar enlace de crédito a la autora"
 
-#: admin/settings.php:825
+#: admin/settings.php:827
 msgid "Enable premium version ads"
 msgstr "Habilitar anuncios de versión premium"
 
-#: admin/settings.php:839
+#: admin/settings.php:841
 msgid "Update Settings"
 msgstr "Ajustes de actualización"
 
@@ -1194,3 +1192,4 @@ msgid "Hi there!  Im just a plugin, not much I can do when called directly."
 msgstr ""
 "Hola! Soy solo un complemento, no puedo hacer mucho cuando me llaman "
 "directamente."
+

@@ -747,20 +747,21 @@ function dethide_fbap(id)
 				</td>
 				</tr>
 				<tr valign="top">
-					<td scope="row" colspan="1" width="50%"> <?php _e('Auto publish on editing posts/pages/custom post types','facebook-auto-publish'); ?>
-					</td>
-					<td >
-						<input type="radio" name="xyz_fbap_default_selection_edit" value="1" <?php  if($xyz_fbap_default_selection_edit==1) echo 'checked';?>/> <?php _e('Enabled','facebook-auto-publish'); ?> <br/>
-						<input type="radio" name="xyz_fbap_default_selection_edit" value="0" <?php  if($xyz_fbap_default_selection_edit==0) echo 'checked';?>/> <?php _e('Disabled','facebook-auto-publish'); ?> <br/>
-						<input type="radio" name="xyz_fbap_default_selection_edit" value="2" <?php  if($xyz_fbap_default_selection_edit==2) echo 'checked';?>/> <?php _e('Use settings from post creation or post updation','facebook-auto-publish'); ?>
-					</td>
-				</tr>
-				<tr valign="top">
 					<td scope="row" colspan="1" width="50%"> <?php _e('Auto publish on creating posts/pages/custom post types','facebook-auto-publish'); ?>
 					</td>
 					<td >
 						<input type="radio" name="xyz_fbap_default_selection_create" value="1" <?php  if($xyz_fbap_default_selection_create==1) echo 'checked';?>/> <?php _e('Enabled','facebook-auto-publish'); ?> <br/>
 						<input type="radio" name="xyz_fbap_default_selection_create" value="0" <?php  if($xyz_fbap_default_selection_create==0) echo 'checked';?>/> <?php _e('Disabled','facebook-auto-publish'); ?> <br/>
+						<input type="radio" name="xyz_fbap_default_selection_create" value="2" <?php  if($xyz_fbap_default_selection_create==2) echo 'checked';?>/> <?php _e('Use metabox settings','facebook-auto-publish'); ?>
+					</td>
+				</tr>
+				<tr valign="top">
+					<td scope="row" colspan="1" width="50%"> <?php _e('Auto publish on editing posts/pages/custom post types','facebook-auto-publish'); ?>
+					</td>
+					<td >
+						<input type="radio" name="xyz_fbap_default_selection_edit" value="1" <?php  if($xyz_fbap_default_selection_edit==1) echo 'checked';?>/> <?php _e('Enabled','facebook-auto-publish'); ?> <br/>
+						<input type="radio" name="xyz_fbap_default_selection_edit" value="0" <?php  if($xyz_fbap_default_selection_edit==0) echo 'checked';?>/> <?php _e('Disabled','facebook-auto-publish'); ?> <br/>
+						<input type="radio" name="xyz_fbap_default_selection_edit" value="2" <?php  if($xyz_fbap_default_selection_edit==2) echo 'checked';?>/> <?php _e('Use metabox settings','facebook-auto-publish'); ?>
 					</td>
 				</tr>
 					

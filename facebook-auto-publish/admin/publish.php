@@ -22,6 +22,11 @@ function xyz_link_fbap_future_to_publish($new_status, $old_status, $post){
 	if(!isset($GLOBALS['fbap_dup_publish']))
 		$GLOBALS['fbap_dup_publish']=array();
 	$postid =$post->ID;
+	$post_published_date_time=$post_modified_date_time=time();
+	if ($post) {
+		$post_published_date_time = strtotime(get_the_date('Y-m-d H:i:s', $postid));
+		$post_modified_date_time = strtotime(get_the_modified_date('Y-m-d H:i:s', $postid));
+	}
 	$get_post_meta=get_post_meta($postid,"xyz_fbap",true);
 	$post_permissin=get_option('xyz_fbap_post_permission');
 	if(isset($_POST['xyz_fbap_post_permission']))
@@ -37,11 +42,27 @@ function xyz_link_fbap_future_to_publish($new_status, $old_status, $post){
 	}
 	else 
 	{
-		if ($post_permissin == 1) {
+		if ($post_permissin == 1) 
+		{
 			if($new_status == 'publish')
 			{
 			if ($get_post_meta == 1 ) {
+					if(get_option('xyz_fbap_default_selection_edit')==0)
 					return;
+			}
+				else //prevent backend publish
+				{
+					//post meta not 1, edited post
+					if (($post_modified_date_time != $post_published_date_time) && $old_status=='publish' ) 
+					{//already plublished being edited
+						if ((get_option('xyz_fbap_default_selection_edit') == 0))
+							return;
+					}
+					else //post meta not 1, new post
+					{
+					if ((get_option('xyz_fbap_default_selection_create') == 0))
+						return;
+					}
 			}
 			}
 			else return;
@@ -68,20 +89,21 @@ function xyz_fbap_link_publish($post_ID) {
 	$get_post_meta_future_data=get_post_meta($post_ID,"xyz_fbap_future_to_publish",true);
 	$xyz_fbap_po_method=$xyz_fbap_message='';
 	$post_permissin=get_option('xyz_fbap_post_permission');
-	if(isset($_POST['xyz_fbap_post_permission']))
-		$post_permissin=intval($_POST['xyz_fbap_post_permission']);
-	elseif(!empty($get_post_meta_future_data) && get_option('xyz_fbap_default_selection_edit')==2 )///select values from post meta
+	$get_post_meta=get_post_meta($post_ID,"xyz_fbap",true);
+	if(!empty($get_post_meta_future_data) && ((get_option('xyz_fbap_default_selection_edit')==2 && $get_post_meta==1) || (get_option('xyz_fbap_default_selection_create')==2 && $get_post_meta!=1 )))///select values from post meta
 	{
 		$post_permissin=$get_post_meta_future_data['post_fb_permission'];
 		$xyz_fbap_po_method=$get_post_meta_future_data['xyz_fbap_po_method'];
 		$xyz_fbap_message=$get_post_meta_future_data['xyz_fbap_message'];
 	}
+	if(isset($_POST['xyz_fbap_post_permission']))
+		$post_permissin=intval($_POST['xyz_fbap_post_permission']);
 		
 	if ($post_permissin != 1) {
 		$_POST=$_POST_CPY;
 		return ;
 	
-	}elseif(( (isset($_POST['_inline_edit'])) || (isset($_REQUEST['bulk_edit'])) ) && (get_option('xyz_fbap_default_selection_edit') == 0) ) {
+	}elseif(( (isset($_POST['_inline_edit'])) || (isset($_REQUEST['bulk_edit'])) ) && (get_option('xyz_fbap_default_selection_edit') == 0 && $get_post_meta==1) ) {
 		$_POST=$_POST_CPY;
 		return;
 	}
@@ -301,7 +323,7 @@ function xyz_fbap_link_publish($post_ID) {
 				}
 				$message1=str_replace('{POST_TITLE}', $name, $message);
 				$message2=str_replace('{BLOG_TITLE}', $caption,$message1);
-				$message3=str_replace('{PERMALINK}', $link, $message2);
+							$message3=str_replace('{PERMALINK}', ' '.$link.' ', $message2);
 				$message4=str_replace('{POST_EXCERPT}', $excerpt, $message3);
 				$message5=str_replace('{POST_CONTENT}', $description, $message4);
 				$message5=str_replace('{USER_NICENAME}', $user_nicename, $message5);

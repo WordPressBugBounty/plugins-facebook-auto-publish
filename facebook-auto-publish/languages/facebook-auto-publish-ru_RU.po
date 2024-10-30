@@ -1,17 +1,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: multilang\n"
-"POT-Creation-Date: 2022-07-08 11:49+0530\n"
-"PO-Revision-Date: 2022-07-08 11:49+0530\n"
+"POT-Creation-Date: 2024-09-26 16:42+0530\n"
+"PO-Revision-Date: 2024-09-26 16:43+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"X-Generator: Poedit 3.1\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.4\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: _e;__\n"
 "X-Poedit-SearchPath-0: admin/settings.php\n"
@@ -45,14 +45,14 @@ msgstr ""
 #: admin/about.php:17
 #, php-format
 msgid ""
-"If you would like to have more features , please try <a href=\"%s\" target="
-"\"_blank\">%s</a> which is a premium version of this plugin. We have "
+"If you would like to have more features , please try <a href=\"%s\" "
+"target=\"_blank\">%s</a> which is a premium version of this plugin. We have "
 "included a quick comparison of the free and premium plugins for your "
 "reference."
 msgstr ""
-"Если вы хотите иметь больше возможностей, попробуйте <a href=\"%s\" target="
-"\"_blank\">%s</a> — премиум-версию этого подключаемого модуля. Для справки "
-"мы включили быстрое сравнение бесплатных и премиальных плагинов."
+"Если вы хотите иметь больше возможностей, попробуйте <a href=\"%s\" "
+"target=\"_blank\">%s</a> — премиум-версию этого подключаемого модуля. Для "
+"справки мы включили быстрое сравнение бесплатных и премиальных плагинов."
 
 #: admin/about.php:23
 msgid "Feature group"
@@ -79,7 +79,7 @@ msgstr "%s Премиум"
 msgid "Supported Media"
 msgstr "Поддерживаемые носители"
 
-#: admin/about.php:35 admin/admin-notices.php:56 admin/metabox.php:236
+#: admin/about.php:35 admin/admin-notices.php:56 admin/metabox.php:303
 msgid "Facebook"
 msgstr "Фейсбук"
 
@@ -112,53 +112,49 @@ msgid "Publish to facebook pages"
 msgstr "Публикация на страницах фейсбука"
 
 #: admin/about.php:102
-msgid "Publish to facebook groups"
-msgstr "Публиковать в группах фейсбук"
-
-#: admin/about.php:111
 msgid "Publish to twitter profile"
 msgstr "Опубликовать в твиттер-профиле"
 
-#: admin/about.php:121
+#: admin/about.php:112
 msgid "Publish to linkedin profile/company pages"
 msgstr "Публикация на страницах профиля/компании linkedin"
 
-#: admin/about.php:130
+#: admin/about.php:121
 msgid "Publish to instagram Business accounts"
 msgstr "Публикация в бизнес-аккаунте Instagram"
 
-#: admin/about.php:139
+#: admin/about.php:130
 msgid "Publish to tumblr profile"
 msgstr "Опубликовать в профиле Тамблер"
 
-#: admin/about.php:149
+#: admin/about.php:140
 msgid "Publish to pinterest boards"
 msgstr "Публикация на досках пинтерест"
 
-#: admin/about.php:158
+#: admin/about.php:149
 msgid "Option to add twitter image description for visually impaired people"
 msgstr "Возможность добавить описание изображения в твиттере для слабовидящих"
 
-#: admin/about.php:167
+#: admin/about.php:158
 msgid "Option to republish existing posts"
 msgstr "Возможность повторной публикации существующих сообщений"
 
-#: admin/about.php:177
+#: admin/about.php:168
 msgid "Publish to multiple social media accounts"
 msgstr "Публикация в нескольких учетных записях в социальных сетях"
 
-#: admin/about.php:187
+#: admin/about.php:178
 msgid ""
 "Seperate message formats for publishing to multiple social media accounts"
 msgstr ""
 "Отдельные форматы сообщений для публикации в нескольких учетных записях "
 "социальных сетей"
 
-#: admin/about.php:197
+#: admin/about.php:188
 msgid "Save auto publish settings of individual posts"
 msgstr "Сохранить настройки автоматической публикации отдельных сообщений"
 
-#: admin/about.php:207
+#: admin/about.php:198
 msgid ""
 "Hash Tags support for Facebook, Twitter, Linkedin, Instagram, Tumblr and "
 "Pinterest"
@@ -166,8 +162,12 @@ msgstr ""
 "Поддержка хеш-тегов для фейсбук, твиттер, Linkedin, Инстаграм,  пинтерест и "
 "Тамблер"
 
-#: admin/about.php:216
+#: admin/about.php:207
 msgid "Option to use post tags as hash tags"
+msgstr "Возможность использовать почтовые теги в качестве хэш-тегов"
+
+#: admin/about.php:216
+msgid "Option to use post categories as hash tags"
 msgstr "Возможность использовать почтовые теги в качестве хэш-тегов"
 
 #: admin/about.php:225
@@ -410,10 +410,10 @@ msgid ""
 "href=\"%s\" target=\"_blank\"> %s </a>. Would you consider supporting us "
 "with the continued development of the plugin using any of the below methods?"
 msgstr ""
-"Благодарим вас за использование подключаемого модуля <a href=\"%s\" target="
-"\"_blank\"> %s </a> от <a href=\"%s\" target=\"_blank\"> %s </a>. Не могли "
-"бы вы поддержать нас в дальнейшей разработке плагина, используя любой из "
-"следующих методов?"
+"Благодарим вас за использование подключаемого модуля <a href=\"%s\" "
+"target=\"_blank\"> %s </a> от <a href=\"%s\" target=\"_blank\"> %s </a>. Не "
+"могли бы вы поддержать нас в дальнейшей разработке плагина, используя любой "
+"из следующих методов?"
 
 #: admin/admin-notices.php:45
 msgid "Rate it 5★'s on wordpress"
@@ -442,10 +442,10 @@ msgstr "Спасибо за предложение."
 #: admin/fbap-suggest-feature.php:11 admin/fbap-suggest-feature.php:19
 #: admin/fbap-suggest-feature.php:27 admin/header.php:19 admin/header.php:33
 #: admin/header.php:49 admin/manage-authorizations.php:9
-#: admin/manage-authorizations.php:132 admin/manage-authorizations.php:192
+#: admin/manage-authorizations.php:134 admin/manage-authorizations.php:194
 #: admin/settings.php:32 admin/settings.php:130 admin/settings.php:138
 #: admin/settings.php:147 admin/settings.php:158 admin/settings.php:167
-#: admin/settings.php:182 admin/settings.php:1025 admin/settings.php:1060
+#: admin/settings.php:182 admin/settings.php:1027 admin/settings.php:1062
 msgid "Dismiss"
 msgstr "Увольнять"
 
@@ -610,97 +610,97 @@ msgstr ""
 "Пожалуйста, авторизуйте приложение %s в настройках Facebook для доступа к "
 "этой странице."
 
-#: admin/manage-authorizations.php:237 admin/menu.php:38
+#: admin/manage-authorizations.php:239 admin/menu.php:38
 msgid "Manage Authorizations"
 msgstr "Управление авторизациями"
 
-#: admin/manage-authorizations.php:261
+#: admin/manage-authorizations.php:263
 msgid "Current Plan:"
 msgstr "Текущий план:"
 
-#: admin/manage-authorizations.php:263
+#: admin/manage-authorizations.php:265
 msgid "Allowed Facebook users:"
 msgstr "Разрешенные пользователи Facebook:"
 
-#: admin/manage-authorizations.php:264
+#: admin/manage-authorizations.php:266
 msgid "API limit per account :"
 msgstr "Ограничение API на аккаунт:"
 
-#: admin/manage-authorizations.php:264
+#: admin/manage-authorizations.php:266
 msgid "per hour"
 msgstr "в час"
 
-#: admin/manage-authorizations.php:265
+#: admin/manage-authorizations.php:267
 msgid "Package Expiry :"
 msgstr "Срок действия пакета:"
 
-#: admin/manage-authorizations.php:266
+#: admin/manage-authorizations.php:268
 msgid "Package Status :"
 msgstr "Статус пакета:"
 
-#: admin/manage-authorizations.php:275
+#: admin/manage-authorizations.php:277
 msgid "Upgrade/Renew"
 msgstr "Обновить/обновить"
 
-#: admin/manage-authorizations.php:282
+#: admin/manage-authorizations.php:284
 msgid "Show all entries"
 msgstr "Показать все записи"
 
-#: admin/manage-authorizations.php:283
+#: admin/manage-authorizations.php:285
 msgid "Show entries from current wp installation"
 msgstr "Показать записи из текущей установки wp"
 
-#: admin/manage-authorizations.php:284
+#: admin/manage-authorizations.php:286
 msgid "Show entries from other wp installations"
 msgstr "Показать записи из других установок wp"
 
-#: admin/manage-authorizations.php:290
+#: admin/manage-authorizations.php:292
 msgid "Facebook username"
 msgstr "Имя пользователя Facebook"
 
-#: admin/manage-authorizations.php:291
+#: admin/manage-authorizations.php:293
 msgid "Selected pages"
 msgstr "Выбранные страницы"
 
-#: admin/manage-authorizations.php:292
+#: admin/manage-authorizations.php:294
 msgid "Selected groups"
 msgstr "Выбранные группы"
 
-#: admin/manage-authorizations.php:294
+#: admin/manage-authorizations.php:296
 #, php-format
 msgid "%s url"
 msgstr "URL-адрес %s"
 
-#: admin/manage-authorizations.php:297
+#: admin/manage-authorizations.php:299
 msgid "Plugin"
 msgstr "Плагин"
 
-#: admin/manage-authorizations.php:299
+#: admin/manage-authorizations.php:301
 #, php-format
 msgid "Account ID %s"
 msgstr "Идентификатор учетной записи %s"
 
-#: admin/manage-authorizations.php:301
+#: admin/manage-authorizations.php:303
 msgid "Action"
 msgstr "Действие"
 
-#: admin/manage-authorizations.php:336
+#: admin/manage-authorizations.php:338
 msgid "Not Applicable"
 msgstr "Непригодный"
 
-#: admin/manage-authorizations.php:343 admin/manage-authorizations.php:366
+#: admin/manage-authorizations.php:345 admin/manage-authorizations.php:368
 msgid "Delete"
 msgstr "Удалить"
 
-#: admin/manage-authorizations.php:356
+#: admin/manage-authorizations.php:358
 msgid "(Inactive)"
 msgstr "(Неактивный)"
 
-#: admin/manage-authorizations.php:376
+#: admin/manage-authorizations.php:378
 msgid "No Authorizations"
 msgstr "Нет авторизации"
 
-#: admin/manage-authorizations.php:382
+#: admin/manage-authorizations.php:384
 msgid "Unable to connect. Please check your curl and firewall settings"
 msgstr ""
 "Невозможно подключиться. Пожалуйста, проверьте настройки curl и брандмауэра"
@@ -743,88 +743,88 @@ msgstr "Рекорды"
 msgid "Suggest a Feature"
 msgstr "Предложить функцию"
 
-#: admin/metabox.php:244 admin/settings.php:303
+#: admin/metabox.php:311 admin/settings.php:303
 msgid "Enable auto publish post to my facebook account"
 msgstr ""
 "Включить автоматическую публикацию сообщений в моей учетной записи facebook"
 
-#: admin/metabox.php:247 admin/settings.php:306 admin/settings.php:412
+#: admin/metabox.php:314 admin/settings.php:306 admin/settings.php:412
 #: admin/settings.php:420 admin/settings.php:654 admin/settings.php:663
-#: admin/settings.php:770 admin/settings.php:819 admin/settings.php:828
+#: admin/settings.php:772 admin/settings.php:821 admin/settings.php:830
 msgid "Yes"
 msgstr "Да"
 
-#: admin/metabox.php:248 admin/settings.php:307 admin/settings.php:413
+#: admin/metabox.php:315 admin/settings.php:307 admin/settings.php:413
 #: admin/settings.php:421 admin/settings.php:655 admin/settings.php:664
-#: admin/settings.php:771 admin/settings.php:820 admin/settings.php:829
+#: admin/settings.php:773 admin/settings.php:822 admin/settings.php:831
 msgid "No"
 msgstr "Hет"
 
-#: admin/metabox.php:253 admin/settings.php:380
+#: admin/metabox.php:320 admin/settings.php:380
 msgid "Posting method"
 msgstr "Способ публикации"
 
-#: admin/metabox.php:257 admin/settings.php:386
+#: admin/metabox.php:324 admin/settings.php:386
 msgid "Simple text message"
 msgstr "Простое текстовое сообщение"
 
-#: admin/metabox.php:261 admin/settings.php:390
+#: admin/metabox.php:328 admin/settings.php:390
 msgid "Upload image to app album"
 msgstr "Загрузить изображение в альбом приложения"
 
-#: admin/metabox.php:263 admin/settings.php:392
+#: admin/metabox.php:330 admin/settings.php:392
 msgid "Upload image to timeline album"
 msgstr "Загрузить изображение в альбом временной шкалы"
 
-#: admin/metabox.php:268 admin/settings.php:397
+#: admin/metabox.php:335 admin/settings.php:397
 msgid "Attach your blog post"
 msgstr "Прикрепите запись в блоге"
 
-#: admin/metabox.php:271 admin/settings.php:400
+#: admin/metabox.php:338 admin/settings.php:400
 msgid "Share a link to your blog post"
 msgstr "Поделитесь ссылкой на запись в блоге"
 
-#: admin/metabox.php:277 admin/settings.php:425
+#: admin/metabox.php:344 admin/settings.php:425
 msgid "Message format for posting"
 msgstr "Формат сообщения для публикации"
 
-#: admin/metabox.php:280 admin/settings.php:428
+#: admin/metabox.php:347 admin/settings.php:428
 msgid "Insert the title of your post."
 msgstr "Вставьте заголовок вашего поста."
 
-#: admin/metabox.php:281 admin/settings.php:429
+#: admin/metabox.php:348 admin/settings.php:429
 msgid "Insert the URL where your post is displayed."
 msgstr "Вставьте URL-адрес, где отображается ваше сообщение."
 
-#: admin/metabox.php:282 admin/settings.php:430
+#: admin/metabox.php:349 admin/settings.php:430
 msgid "Insert the excerpt of your post."
 msgstr "Вставьте отрывок из вашего поста."
 
-#: admin/metabox.php:283 admin/settings.php:431
+#: admin/metabox.php:350 admin/settings.php:431
 msgid "Insert the description of your post."
 msgstr "Вставьте описание вашего поста."
 
-#: admin/metabox.php:284 admin/settings.php:432
+#: admin/metabox.php:351 admin/settings.php:432
 msgid "Insert the name of your blog."
 msgstr "Введите название вашего блога."
 
-#: admin/metabox.php:285 admin/settings.php:433
+#: admin/metabox.php:352 admin/settings.php:433
 msgid "Insert the nicename of the author."
 msgstr "Вставьте хорошее имя автора."
 
-#: admin/metabox.php:286 admin/settings.php:434
+#: admin/metabox.php:353 admin/settings.php:434
 msgid "Insert the ID of your post."
 msgstr "Вставьте идентификатор вашего поста."
 
-#: admin/metabox.php:287 admin/settings.php:435
+#: admin/metabox.php:354 admin/settings.php:435
 msgid "Insert the publish date of your post."
 msgstr "Вставьте дату публикации вашего поста."
 
-#: admin/metabox.php:288 admin/settings.php:436
+#: admin/metabox.php:355 admin/settings.php:436
 msgid "Insert the display name of the author."
 msgstr "Вставьте отображаемое имя автора."
 
-#: admin/metabox.php:293 admin/settings.php:440
+#: admin/metabox.php:360 admin/settings.php:440
 msgid "Select"
 msgstr "Выбирать"
 
@@ -931,8 +931,8 @@ msgid ""
 "For detailed step by step instructions <b><a href=\"%s\" target=\"_blank\"> "
 "Click here."
 msgstr ""
-"Для получения подробных пошаговых инструкций <b><a href=\"%s\" target="
-"\"_blank\"> нажмите здесь."
+"Для получения подробных пошаговых инструкций <b><a href=\"%s\" "
+"target=\"_blank\"> нажмите здесь."
 
 #: admin/settings.php:300
 msgid "All fields given below are mandatory"
@@ -994,8 +994,8 @@ msgstr ""
 msgid ""
 "For more details contact <a href=\"%s\" target=\"_blank\" > Support Desk"
 msgstr ""
-"Для получения более подробной информации обратитесь в <a href=\"%s\" target="
-"\"_blank\" > службу поддержки"
+"Для получения более подробной информации обратитесь в <a href=\"%s\" "
+"target=\"_blank\" > службу поддержки"
 
 #: admin/settings.php:337
 #, php-format
@@ -1148,9 +1148,9 @@ msgstr "Включена"
 msgid "Disabled"
 msgstr "Hетрудоспособный"
 
-#: admin/settings.php:755
-msgid "Use settings from post creation or post updation"
-msgstr "Использовать настройки из создания или обновления публикации"
+#: admin/settings.php:755 admin/settings.php:764
+msgid "Use metabox settings"
+msgstr "Oбщие настройки"
 
 #: admin/settings.php:759
 msgid "Auto publish on creating posts/pages/custom post types"
@@ -1158,27 +1158,27 @@ msgstr ""
 "Автоматическая публикация при создании сообщений/страниц/пользовательских "
 "типов сообщений"
 
-#: admin/settings.php:768
+#: admin/settings.php:770
 msgid "Enable SSL peer verification in remote requests"
 msgstr "Включить одноранговую проверку SSL в удаленных запросах"
 
-#: admin/settings.php:776
+#: admin/settings.php:778
 msgid "Apply filters during publishing"
 msgstr "Применение фильтров во время публикации"
 
-#: admin/settings.php:813
+#: admin/settings.php:815
 msgid "Other Settings"
 msgstr "Другие настройки"
 
-#: admin/settings.php:816
+#: admin/settings.php:818
 msgid "Enable credit link to author"
 msgstr "Включить кредитную ссылку на автора"
 
-#: admin/settings.php:825
+#: admin/settings.php:827
 msgid "Enable premium version ads"
 msgstr "Включить рекламу премиум-версии"
 
-#: admin/settings.php:839
+#: admin/settings.php:841
 msgid "Update Settings"
 msgstr "Обновить настройки"
 
