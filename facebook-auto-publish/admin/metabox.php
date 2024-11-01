@@ -71,7 +71,17 @@ function xyz_fbap_addpostmetatags()
 
 /****************** Code to reload metabox in Gutenberg editor ******************/
 jQuery(document).ready(function($) {
-	if (typeof wp !== 'undefined' && wp.blocks && wp.data && wp.data.select) {
+	// Check if the document body is available and if we're on a block editor page
+const isBlockEditorPage = document.body && document.body.classList.contains('block-editor-page');
+// Ensure wp and necessary methods are available
+if (isBlockEditorPage && 
+	typeof wp !== 'undefined' && 
+	wp.blocks && 
+	wp.data && 
+	typeof wp.data.select('core/notices') === 'object' && 
+	typeof wp.data.select('core/editor') === 'object' && 
+	typeof wp.data.select('core/editor').getCurrentPost === 'function' &&
+	typeof wp.data.select('core/notices').getNotices === 'function') {
 		wp.data.subscribe(() => { 
 		const notices = wp.data.select( 'core/notices' ).getNotices(); 
 		const publishSuccessNotice = notices.find( notice => notice.content === 'Post published.' || notice.content === 'Post updated.');
