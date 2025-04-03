@@ -18,7 +18,7 @@ if( !defined('ABSPATH') ){ exit();}
 	echo $fbap_feature_msg; ?>
 </p>
  </div>
- <table class="xyz-premium-comparison" cellspacing=0 style="width: 99%;">
+ <table class="xyz_fbap_premium_comparison" cellspacing=0 style="width: 99%;">
 	<tr style="background-color: #EDEDED">
 		<td><h2> <?php _e('Feature group','facebook-auto-publish'); ?> </h2></td>
 		<td><h2> <?php _e('Feature','facebook-auto-publish'); ?> </h2></td>
@@ -31,7 +31,7 @@ if( !defined('ABSPATH') ){ exit();}
 	</tr>
 	<!-- Supported Media  -->
 	<tr>
-		<td rowspan="6"><h4> <?php _e('Supported Media','facebook-auto-publish'); ?> </h4></td>
+		<td rowspan="8"><h4> <?php _e('Supported Media','facebook-auto-publish'); ?> </h4></td>
 		<td> <?php _e('Facebook','facebook-auto-publish'); ?> </td>
 		<td><img src="<?php echo plugins_url("images/tick.png",XYZ_FBAP_PLUGIN_FILE);?>">
 		</td>
@@ -86,10 +86,28 @@ if( !defined('ABSPATH') ){ exit();}
 		<td><img src="<?php echo plugins_url("images/tick.png",XYZ_FBAP_PLUGIN_FILE);?>">
 		</td>
 	</tr>
+	<tr>
+		<td> <?php _e('Telegram','facebook-auto-publish'); ?> </td>
+		<td><img src="<?php echo plugins_url("images/cross.png",XYZ_FBAP_PLUGIN_FILE);?>">
+		</td>
+		<td><img src="<?php echo plugins_url("images/tick.png",XYZ_FBAP_PLUGIN_FILE);?>">
+		</td>
+		<td><img src="<?php echo plugins_url("images/tick.png",XYZ_FBAP_PLUGIN_FILE);?>">
+		</td>
+	</tr>
+	<tr>
+		<td> <?php _e('Threads','facebook-auto-publish'); ?> </td>
+		<td><img src="<?php echo plugins_url("images/cross.png",XYZ_FBAP_PLUGIN_FILE);?>">
+		</td>
+		<td><img src="<?php echo plugins_url("images/tick.png",XYZ_FBAP_PLUGIN_FILE);?>">
+		</td>
+		<td><img src="<?php echo plugins_url("images/tick.png",XYZ_FBAP_PLUGIN_FILE);?>">
+		</td>
+	</tr>
 
 		<!-- Posting Options  -->
 	<tr>
-		<td rowspan="15"><h4> <?php _e('Posting Options','facebook-auto-publish'); ?> </h4></td>
+		<td rowspan="17"><h4> <?php _e('Posting Options','facebook-auto-publish'); ?> </h4></td>
 		<td> <?php _e('Publish to facebook pages','facebook-auto-publish'); ?> </td>
 		<td><img src="<?php echo plugins_url("images/tick.png",XYZ_FBAP_PLUGIN_FILE);?>">
 		</td>
@@ -138,6 +156,24 @@ if( !defined('ABSPATH') ){ exit();}
 	
 	<tr>
 		<td> <?php _e('Publish to pinterest boards','facebook-auto-publish'); ?> </td>
+		<td><img src="<?php echo plugins_url("images/cross.png",XYZ_FBAP_PLUGIN_FILE);?>">
+		</td>
+		<td><img src="<?php echo plugins_url("images/tick.png",XYZ_FBAP_PLUGIN_FILE);?>">
+		</td>
+		<td><img src="<?php echo plugins_url("images/tick.png",XYZ_FBAP_PLUGIN_FILE);?>">
+		</td>
+	</tr>
+	<tr>
+		<td> <?php _e('Publish to telegram channels and groups','facebook-auto-publish'); ?> </td>
+		<td><img src="<?php echo plugins_url("images/cross.png",XYZ_FBAP_PLUGIN_FILE);?>">
+		</td>
+		<td><img src="<?php echo plugins_url("images/tick.png",XYZ_FBAP_PLUGIN_FILE);?>">
+		</td>
+		<td><img src="<?php echo plugins_url("images/tick.png",XYZ_FBAP_PLUGIN_FILE);?>">
+		</td>
+	</tr>
+	<tr>
+		<td> <?php _e('Publish to threads profile','facebook-auto-publish'); ?> </td>
 		<td><img src="<?php echo plugins_url("images/cross.png",XYZ_FBAP_PLUGIN_FILE);?>">
 		</td>
 		<td><img src="<?php echo plugins_url("images/tick.png",XYZ_FBAP_PLUGIN_FILE);?>">
@@ -195,7 +231,7 @@ if( !defined('ABSPATH') ){ exit();}
 	</tr>
 	
 	<tr>
-		<td> <?php _e('Hash Tags support for Facebook, Twitter, Linkedin, Instagram, Tumblr and Pinterest','facebook-auto-publish'); ?> </td>
+		<td> <?php _e('Hash Tags support for Facebook, Twitter, Linkedin, Instagram, Tumblr, Threads, Pinterest and Telegram','facebook-auto-publish'); ?> </td>
 		<td><img src="<?php echo plugins_url("images/cross.png",XYZ_FBAP_PLUGIN_FILE);?>">
 		</td>
 		<td><img src="<?php echo plugins_url("images/tick.png",XYZ_FBAP_PLUGIN_FILE);?>">
@@ -266,7 +302,7 @@ if( !defined('ABSPATH') ){ exit();}
 		</td>
 	</tr>
 	<tr>
-		<td> <?php _e('Publish multiple images to facebook, tumblr, linkedin and twitter along with post content','facebook-auto-publish'); ?> </td>
+		<td> <?php _e('Publish multiple images to facebook, tumblr, linkedin, twitter, threads and telegram along with post content','facebook-auto-publish'); ?> </td>
 		<td><img src="<?php echo plugins_url("images/cross.png",XYZ_FBAP_PLUGIN_FILE);?>">
 		</td>
 		<td><img src="<?php echo plugins_url("images/tick.png",XYZ_FBAP_PLUGIN_FILE);?>">
@@ -287,7 +323,7 @@ if( !defined('ABSPATH') ){ exit();}
      <!-- Video Options  -->
 	<tr>
 	<td rowspan="4"><h4> <?php _e('Video/Audio Options','facebook-auto-publish'); ?> </h4></td>
-		<td> <?php _e('Publish video to facebook, tumblr, Linkedin, Instagram and twitter along with post content','facebook-auto-publish'); ?> </td>
+		<td> <?php _e('Publish video to facebook, tumblr,Linkedin, Instagram, twitter, threads and telegram along with post content','facebook-auto-publish'); ?> </td>
 		<td><img src="<?php echo plugins_url("images/cross.png",XYZ_FBAP_PLUGIN_FILE);?>">
 		</td>
 		<td><img src="<?php echo plugins_url("images/tick.png",XYZ_FBAP_PLUGIN_FILE);?>">
@@ -554,16 +590,14 @@ if( !defined('ABSPATH') ){ exit();}
 		     echo $fbap_package_msg; ?></td>
 		<td> <?php _e('1 month free subscription','facebook-auto-publish'); ?>
 		</td>
-		<td> <?php _e('1 year free subscription','facebook-auto-publish'); ?>
-		</td>
-		<td><img src="<?php echo plugins_url("images/tick.png",XYZ_FBAP_PLUGIN_FILE);?>">
+		<td colspan="2"> <?php _e('1 year free subscription','facebook-auto-publish'); ?>
 		</td>
 	</tr>
 	<tr>
 		<td> <?php _e('Price','facebook-auto-publish'); ?> </td>
 		<td> <?php _e('FREE','facebook-auto-publish'); ?></td>
-		<td> <?php _e('Starts from 39 USD','facebook-auto-publish'); ?> </td>
-		<td> <?php _e('Starts from 69 USD','facebook-auto-publish'); ?> </td>
+		<td> <?php _e('Starts from 29 USD','facebook-auto-publish'); ?> </td>
+		<td> <?php _e('Starts from 59 USD','facebook-auto-publish'); ?> </td>
 	</tr>
 	<tr>
 		<td> <?php _e('Purchase','facebook-auto-publish'); ?> </td>

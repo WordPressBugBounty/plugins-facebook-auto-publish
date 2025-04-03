@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: multilang\n"
-"POT-Creation-Date: 2024-09-26 16:41+0530\n"
-"PO-Revision-Date: 2024-09-26 16:41+0530\n"
+"POT-Creation-Date: 2025-03-24 16:26+0530\n"
+"PO-Revision-Date: 2025-03-24 16:28+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -78,7 +78,7 @@ msgstr "%sプレミアム"
 msgid "Supported Media"
 msgstr "サポートされているメディア"
 
-#: admin/about.php:35 admin/admin-notices.php:56 admin/metabox.php:303
+#: admin/about.php:35 admin/admin-notices.php:56 admin/metabox.php:289
 msgid "Facebook"
 msgstr "フェイスブック"
 
@@ -102,92 +102,106 @@ msgstr "タンブラー"
 msgid "Pinterest"
 msgstr "ピンタレスト"
 
-#: admin/about.php:92
+#: admin/about.php:90
+msgid "Telegram"
+msgstr "Telegram"
+
+#: admin/about.php:99
+msgid "Threads"
+msgstr "Threads"
+
+#: admin/about.php:110
 msgid "Posting Options"
 msgstr "投稿オプション"
 
-#: admin/about.php:93
+#: admin/about.php:111
 msgid "Publish to facebook pages"
 msgstr "フェイスブックページに公開する"
 
-#: admin/about.php:102
+#: admin/about.php:120
 msgid "Publish to twitter profile"
 msgstr "ツイッタープロフィールに公開"
 
-#: admin/about.php:112
+#: admin/about.php:130
 msgid "Publish to linkedin profile/company pages"
 msgstr "LinkedInのプロフィール/会社のページに公開する"
 
-#: admin/about.php:121
+#: admin/about.php:139
 msgid "Publish to instagram Business accounts"
 msgstr "インスタグラムのビジネスアカウントに公開する"
 
-#: admin/about.php:130
+#: admin/about.php:148
 msgid "Publish to tumblr profile"
 msgstr "タンブラープロフィールに公開"
 
-#: admin/about.php:140
+#: admin/about.php:158
 msgid "Publish to pinterest boards"
 msgstr "ピンタレストボードに公開"
 
-#: admin/about.php:149
+#: admin/about.php:167
+msgid "Publish to telegram channels and groups"
+msgstr "電報チャネルおよびグループに公開する"
+
+#: admin/about.php:176
+msgid "Publish to threads profile"
+msgstr "スレッドプロファイルに公開"
+
+#: admin/about.php:185
 msgid "Option to add twitter image description for visually impaired people"
 msgstr "視覚障害者向けのツイッター画像の説明を追加するオプション"
 
-#: admin/about.php:158
+#: admin/about.php:194
 msgid "Option to republish existing posts"
 msgstr "既存の投稿を再公開するオプション"
 
-#: admin/about.php:168
+#: admin/about.php:204
 msgid "Publish to multiple social media accounts"
 msgstr "複数のソーシャルメディアアカウントに公開する"
 
-#: admin/about.php:178
+#: admin/about.php:214
 msgid ""
 "Seperate message formats for publishing to multiple social media accounts"
 msgstr "複数のソーシャルメディアアカウントに公開するための個別のメッセージ形式"
 
-#: admin/about.php:188
+#: admin/about.php:224
 msgid "Save auto publish settings of individual posts"
 msgstr "個々の投稿の自動公開設定を保存します"
 
-#: admin/about.php:198
+#: admin/about.php:234
 msgid ""
-"Hash Tags support for Facebook, Twitter, Linkedin, Instagram, Tumblr and "
-"Pinterest"
+"Hash Tags support for Facebook, Twitter, Linkedin, Instagram, Tumblr, "
+"Threads, Pinterest and Telegram"
 msgstr ""
-"フェイスブック、ツイッター、リンクトイン、インスタグラム、ピンタレスト、タン"
-"ブラーのハッシュタグのサポート タンブラー"
+"Facebook、Twitter、Linkedin、Instagram、Tumblr、Threads、Pinterest、Telegram "
+"のハッシュ タグのサポート"
 
-#: admin/about.php:207
+#: admin/about.php:243
 msgid "Option to use post tags as hash tags"
 msgstr "投稿タグをハッシュタグとして使用するオプション"
 
-#: admin/about.php:216
-#, fuzzy
-#| msgid "Option to use post tags as hash tags"
+#: admin/about.php:252
 msgid "Option to use post categories as hash tags"
 msgstr "投稿タグをハッシュタグとして使用するオプション"
 
-#: admin/about.php:225
+#: admin/about.php:261
 msgid "Enable/Disable SSL peer verification"
 msgstr "SSLピア検証を有効/無効にします"
 
-#: admin/about.php:238
+#: admin/about.php:274
 msgid "Image Options"
 msgstr "画像オプション"
 
-#: admin/about.php:239
+#: admin/about.php:275
 msgid "Publish images along with post content"
 msgstr "投稿コンテンツと一緒に画像を公開する"
 
-#: admin/about.php:250
+#: admin/about.php:286
 msgid ""
 "Separate default image url for publishing to multiple social media accounts"
 msgstr ""
 "複数のソーシャルメディアアカウントに公開するための個別のデフォルト画像URL"
 
-#: admin/about.php:260
+#: admin/about.php:296
 msgid ""
 "Option to specify preference from featured image, post content, post meta "
 "and open graph tags"
@@ -195,42 +209,42 @@ msgstr ""
 "注目の画像、投稿コンテンツ、投稿メタ、オープングラフタグから設定を指定するオ"
 "プション"
 
-#: admin/about.php:269
+#: admin/about.php:305
 msgid ""
-"Publish multiple images to facebook, tumblr, linkedin and twitter along with "
-"post content"
+"Publish multiple images to facebook, tumblr, linkedin, twitter, threads and "
+"telegram along with post content"
 msgstr ""
-"投稿コンテンツとともに、フェイスブック、タンブラー、リンクトイン, ツイッター"
-"に複数の画像を公開する"
+"投稿コンテンツとともに複数の画像を Facebook、tumblr、linkedin、twitter、ス"
+"レッド、電報に公開します"
 
-#: admin/about.php:278
+#: admin/about.php:314
 msgid "Option to specify multiphoto preference from post content and post meta"
 msgstr ""
 "投稿コンテンツと投稿メタからマルチフォトプリファレンスを指定するオプション"
 
-#: admin/about.php:289
+#: admin/about.php:325
 msgid "Video/Audio Options"
 msgstr "ビデオ/オーディオオプション"
 
-#: admin/about.php:290
+#: admin/about.php:326
 msgid ""
-"Publish video to facebook, tumblr, Linkedin, Instagram and twitter along "
-"with post content"
+"Publish video to facebook, tumblr,Linkedin, Instagram, twitter, threads and "
+"telegram along with post content"
 msgstr ""
-"投稿コンテンツとともに、フェイスブック、タンブラー、リンクトイン、インスタグ"
-"ラム、ツイッターに動画を公開する"
+"投稿コンテンツとともにビデオを Facebook、tumblr、Linkedin、Instagram、"
+"twitter、スレッド、電報に公開します"
 
-#: admin/about.php:300
+#: admin/about.php:336
 msgid ""
 "Option to specify preference from post content, post meta and open graph tags"
 msgstr ""
 "投稿コンテンツ、投稿メタ、オープングラフタグから設定を指定するオプション"
 
-#: admin/about.php:309
+#: admin/about.php:345
 msgid "Publish audio to tumblr along with post content"
 msgstr "投稿コンテンツと一緒にオーディオをタンブラーに公開する"
 
-#: admin/about.php:318
+#: admin/about.php:354
 msgid ""
 "Option to specify audio preference from  post content, post meta and open "
 "graph tags"
@@ -238,119 +252,119 @@ msgstr ""
 "投稿コンテンツ、投稿メタ、オープングラフタグからオーディオ設定を指定するオプ"
 "ション"
 
-#: admin/about.php:329
+#: admin/about.php:365
 msgid "Filter Options"
 msgstr "フィルタオプション"
 
-#: admin/about.php:330
+#: admin/about.php:366
 msgid "Filter posts to publish based on categories"
 msgstr "カテゴリに基づいて公開する投稿をフィルタリングする"
 
-#: admin/about.php:340
+#: admin/about.php:376
 msgid "Filter posts to publish based on custom post types"
 msgstr "カスタム投稿タイプに基づいて公開する投稿をフィルタリングする"
 
-#: admin/about.php:349
+#: admin/about.php:385
 msgid "Filter posts to publish based on sticky posts"
 msgstr "スティッキー投稿に基づいて公開する投稿をフィルタリングする"
 
-#: admin/about.php:359
+#: admin/about.php:395
 msgid "Configuration to enable/disable page publishing"
 msgstr "ページ公開を有効/無効にする構成"
 
-#: admin/about.php:369
+#: admin/about.php:405
 msgid "Category filter for individual accounts"
 msgstr "個人アカウントのカテゴリフィルター"
 
-#: admin/about.php:379
+#: admin/about.php:415
 msgid "Custom post type filter for individual accounts"
 msgstr "個人アカウント用のカスタム投稿タイプフィルター"
 
-#: admin/about.php:389
+#: admin/about.php:425
 msgid "Enable/Disable page publishing for individual accounts"
 msgstr "個々のアカウントのページ公開を有効/無効にする"
 
-#: admin/about.php:398
+#: admin/about.php:434
 msgid "Override auto publish scheduling for individual accounts"
 msgstr "個々のアカウントの自動公開スケジュールを上書きする"
 
-#: admin/about.php:407
+#: admin/about.php:443
 msgid "Override auto publish based on sticky posts for individual accounts"
 msgstr "個々のアカウントのスティッキー投稿に基づいて自動公開を上書きする"
 
-#: admin/about.php:418
+#: admin/about.php:454
 msgid "Scheduling"
 msgstr "スケジューリング"
 
-#: admin/about.php:419
+#: admin/about.php:455
 msgid "Instantaneous post publishing"
 msgstr "瞬時の投稿公開"
 
-#: admin/about.php:429
+#: admin/about.php:465
 msgid "Scheduled post publishing using cron"
 msgstr "Cronを使用したスケジュールされたポストパブリッシング"
 
-#: admin/about.php:439
+#: admin/about.php:475
 msgid "Status summary of auto publish tasks by mail"
 msgstr "メールによる自動公開タスクのステータスの概要"
 
-#: admin/about.php:449
+#: admin/about.php:485
 msgid "Configurable auto publishing time interval"
 msgstr "構成可能な自動公開時間間隔"
 
-#: admin/about.php:463
+#: admin/about.php:499
 msgid "Publishing History"
 msgstr "出版履歴"
 
-#: admin/about.php:464
+#: admin/about.php:500
 msgid "View auto publish history"
 msgstr "自動公開履歴を表示する"
 
-#: admin/about.php:473
+#: admin/about.php:509
 msgid "View auto publish error logs"
 msgstr "自動公開エラーログを表示する"
 
-#: admin/about.php:483
+#: admin/about.php:519
 msgid "Option to republish post"
 msgstr "投稿を再公開するオプション"
 
-#: admin/about.php:493
+#: admin/about.php:529
 msgid "Option to reschedule publishing"
 msgstr "公開を再スケジュールするオプション"
 
-#: admin/about.php:503
+#: admin/about.php:539
 msgid "Installation and Support"
 msgstr "インストールとサポート"
 
-#: admin/about.php:504
+#: admin/about.php:540
 msgid "Free Installation"
 msgstr "無料インストール"
 
-#: admin/about.php:513
+#: admin/about.php:549
 msgid "Privilege customer support"
 msgstr "特権カスタマーサポート"
 
-#: admin/about.php:523
+#: admin/about.php:559
 msgid "Addon Features"
 msgstr "アドオン機能"
 
-#: admin/about.php:524
+#: admin/about.php:560
 msgid "Advanced Autopublish Scheduler"
 msgstr "高度な自動公開スケジューラ"
 
-#: admin/about.php:533
+#: admin/about.php:569
 msgid "URL-Shortener"
 msgstr "URL-短縮サービス"
 
-#: admin/about.php:542
+#: admin/about.php:578
 msgid "Privilege Management"
 msgstr "特権管理"
 
-#: admin/about.php:551
+#: admin/about.php:587
 msgid "Other"
 msgstr "他の"
 
-#: admin/about.php:553
+#: admin/about.php:589
 #, php-format
 msgid ""
 "%s API package for 1 year, worth 10 USD(1 fb account ,10 api calls per hour)"
@@ -358,39 +372,39 @@ msgstr ""
 "1年間の%s APIパッケージ、10米ドル相当（1 fbアカウント、1時間あたり10 api呼び"
 "出し）"
 
-#: admin/about.php:555
+#: admin/about.php:591
 msgid "1 month free subscription"
 msgstr "1か月の無料サブスクリプション"
 
-#: admin/about.php:557
+#: admin/about.php:593
 msgid "1 year free subscription"
 msgstr "1年間の無料サブスクリプション"
 
-#: admin/about.php:563
+#: admin/about.php:597
 msgid "Price"
 msgstr "価格"
 
-#: admin/about.php:564
+#: admin/about.php:598
 msgid "FREE"
 msgstr "ただで"
 
-#: admin/about.php:565
-msgid "Starts from 39 USD"
-msgstr "39米ドルから"
+#: admin/about.php:599
+msgid "Starts from 29 USD"
+msgstr "29米ドルから"
 
-#: admin/about.php:566
-msgid "Starts from 69 USD"
-msgstr "69米ドルから"
+#: admin/about.php:600
+msgid "Starts from 59 USD"
+msgstr "59米ドルから"
 
-#: admin/about.php:569
+#: admin/about.php:603
 msgid "Purchase"
 msgstr "購入"
 
-#: admin/about.php:571
+#: admin/about.php:605 admin/footer.php:24
 msgid "Buy Now"
 msgstr "今買う"
 
-#: admin/about.php:578
+#: admin/about.php:612
 msgid "Pinterest is added on experimental basis."
 msgstr "ピンタレストは実験的に追加されています。"
 
@@ -417,7 +431,7 @@ msgstr "バックリンクを有効にする"
 msgid "Share on"
 msgstr "共有する"
 
-#: admin/admin-notices.php:50 admin/footer.php:38 admin/header.php:101
+#: admin/admin-notices.php:50 admin/header.php:101
 msgid "Donate"
 msgstr "寄付する"
 
@@ -435,7 +449,7 @@ msgstr "提案ありがとうございます。"
 #: admin/manage-authorizations.php:134 admin/manage-authorizations.php:194
 #: admin/settings.php:32 admin/settings.php:130 admin/settings.php:138
 #: admin/settings.php:147 admin/settings.php:158 admin/settings.php:167
-#: admin/settings.php:182 admin/settings.php:1027 admin/settings.php:1062
+#: admin/settings.php:182 admin/settings.php:1026 admin/settings.php:1061
 msgid "Dismiss"
 msgstr "下げる"
 
@@ -464,60 +478,68 @@ msgstr ""
 msgid "Send Mail To Us"
 msgstr "私たちにメールを送る"
 
-#: admin/footer.php:10
-#, php-format
-msgid "Fully Featured %s Plugin"
-msgstr "フル機能の%sプラグイン"
-
 #: admin/footer.php:11
-msgid "Just 39 USD"
-msgstr "わずか39米ドル"
+#, php-format
+msgid ""
+"%sUpgrade to the Fully Featured XYZ WP Social Media Auto Publish Premium "
+"Plugin for %sJust 29 USD%s"
+msgstr ""
+"“%s完全な機能を備えたXYZ WPソーシャルメディア自動投稿プレミアムプラグインに"
+"アップグレード - %sわずか29 USD%s”"
 
-#: admin/footer.php:21
+#: admin/footer.php:17
+msgid ""
+"Unlock advanced scheduling, multi-account publishing, hashtag automation, "
+"and seamless social media integration!"
+msgstr ""
+"高度なスケジュール設定、複数アカウントの公開、ハッシュタグの自動化、シームレ"
+"スなソーシャル メディア統合を実現します。"
+
+#: admin/footer.php:29
 msgid "Compare Features"
 msgstr "機能の比較"
 
-#: admin/footer.php:30
+#: admin/footer.php:40
 msgid "Follow Us"
 msgstr "フォローする"
 
-#: admin/footer.php:37
+#: admin/footer.php:48
 msgid "Support"
 msgstr "支える"
 
-#: admin/footer.php:39
+#: admin/footer.php:50
 msgid "Contact Us"
 msgstr "お問い合わせ"
 
-#: admin/footer.php:40
+#: admin/footer.php:51
 msgid "Please Rate Us"
 msgstr "評価してください"
 
-#: admin/footer.php:44
+#: admin/footer.php:55
 msgid "Create a ticket at Wordpress forum"
 msgstr "Wordpressフォーラムでチケットを作成する"
 
-#: admin/footer.php:47
+#: admin/footer.php:58
 msgid "Stay tuned for our updates"
 msgstr "最新情報にご期待ください"
 
-#: admin/footer.php:112
+#: admin/footer.php:123
 msgid "Name"
 msgstr "名前"
 
-#: admin/footer.php:127
+#: admin/footer.php:138
 msgid "Email"
 msgstr "Eメール"
 
-#: admin/footer.php:129
+#: admin/footer.php:140
 msgid "Subscribe"
 msgstr "登録し"
 
-#: admin/footer.php:144
+#: admin/footer.php:152
 msgid "Our Plugins"
 msgstr "私たちのプラグイン"
 
-#: admin/footer.php:165
+#: admin/footer.php:173
 msgid "Powered by"
 msgstr "搭載"
 
@@ -731,87 +753,87 @@ msgstr "ログ"
 msgid "Suggest a Feature"
 msgstr "機能を提案する"
 
-#: admin/metabox.php:311 admin/settings.php:303
+#: admin/metabox.php:297 admin/settings.php:303
 msgid "Enable auto publish post to my facebook account"
-msgstr "ツイッターアカウントへの投稿の自動公開を有効にする"
+msgstr "フェイスブック アカウントへの投稿の自動公開を有効にする"
 
-#: admin/metabox.php:314 admin/settings.php:306 admin/settings.php:412
+#: admin/metabox.php:300 admin/settings.php:306 admin/settings.php:412
 #: admin/settings.php:420 admin/settings.php:654 admin/settings.php:663
-#: admin/settings.php:772 admin/settings.php:821 admin/settings.php:830
+#: admin/settings.php:771 admin/settings.php:820 admin/settings.php:829
 msgid "Yes"
 msgstr "はい"
 
-#: admin/metabox.php:315 admin/settings.php:307 admin/settings.php:413
+#: admin/metabox.php:301 admin/settings.php:307 admin/settings.php:413
 #: admin/settings.php:421 admin/settings.php:655 admin/settings.php:664
-#: admin/settings.php:773 admin/settings.php:822 admin/settings.php:831
+#: admin/settings.php:772 admin/settings.php:821 admin/settings.php:830
 msgid "No"
 msgstr "ノー"
 
-#: admin/metabox.php:320 admin/settings.php:380
+#: admin/metabox.php:306 admin/settings.php:380
 msgid "Posting method"
 msgstr "投稿方法"
 
-#: admin/metabox.php:324 admin/settings.php:386
+#: admin/metabox.php:310 admin/settings.php:386
 msgid "Simple text message"
 msgstr "シンプルなテキストメッセージ"
 
-#: admin/metabox.php:328 admin/settings.php:390
+#: admin/metabox.php:314 admin/settings.php:390
 msgid "Upload image to app album"
 msgstr "アプリアルバムに画像をアップロードする"
 
-#: admin/metabox.php:330 admin/settings.php:392
+#: admin/metabox.php:316 admin/settings.php:392
 msgid "Upload image to timeline album"
 msgstr "タイムラインアルバムに画像をアップロードする"
 
-#: admin/metabox.php:335 admin/settings.php:397
+#: admin/metabox.php:321 admin/settings.php:397
 msgid "Attach your blog post"
 msgstr "ブログ投稿を添付してください"
 
-#: admin/metabox.php:338 admin/settings.php:400
+#: admin/metabox.php:324 admin/settings.php:400
 msgid "Share a link to your blog post"
 msgstr "ブログ投稿へのリンクを共有する"
 
-#: admin/metabox.php:344 admin/settings.php:425
+#: admin/metabox.php:330 admin/settings.php:425
 msgid "Message format for posting"
 msgstr "投稿用のメッセージ形式"
 
-#: admin/metabox.php:347 admin/settings.php:428
+#: admin/metabox.php:333 admin/settings.php:428
 msgid "Insert the title of your post."
 msgstr "投稿のタイトルを挿入します。"
 
-#: admin/metabox.php:348 admin/settings.php:429
+#: admin/metabox.php:334 admin/settings.php:429
 msgid "Insert the URL where your post is displayed."
 msgstr "投稿が表示されているURLを挿入します。"
 
-#: admin/metabox.php:349 admin/settings.php:430
+#: admin/metabox.php:335 admin/settings.php:430
 msgid "Insert the excerpt of your post."
 msgstr "投稿の抜粋を挿入します。"
 
-#: admin/metabox.php:350 admin/settings.php:431
+#: admin/metabox.php:336 admin/settings.php:431
 msgid "Insert the description of your post."
 msgstr "投稿の説明を挿入します。"
 
-#: admin/metabox.php:351 admin/settings.php:432
+#: admin/metabox.php:337 admin/settings.php:432
 msgid "Insert the name of your blog."
 msgstr "ブログの名前を挿入します。"
 
-#: admin/metabox.php:352 admin/settings.php:433
+#: admin/metabox.php:338 admin/settings.php:433
 msgid "Insert the nicename of the author."
 msgstr "著者のnicenameを挿入します。"
 
-#: admin/metabox.php:353 admin/settings.php:434
+#: admin/metabox.php:339 admin/settings.php:434
 msgid "Insert the ID of your post."
 msgstr "投稿のIDを挿入します。"
 
-#: admin/metabox.php:354 admin/settings.php:435
+#: admin/metabox.php:340 admin/settings.php:435
 msgid "Insert the publish date of your post."
 msgstr "投稿の公開日を挿入します。"
 
-#: admin/metabox.php:355 admin/settings.php:436
+#: admin/metabox.php:341 admin/settings.php:436
 msgid "Insert the display name of the author."
 msgstr "著者の表示名を挿入します。"
 
-#: admin/metabox.php:360 admin/settings.php:440
+#: admin/metabox.php:346 admin/settings.php:440
 msgid "Select"
 msgstr "選択する"
 
@@ -1119,8 +1141,8 @@ msgid "NIL"
 msgstr "ニル"
 
 #: admin/settings.php:750
-msgid "Auto publish on editing posts/pages/custom post types"
-msgstr "投稿/ページ/カスタム投稿タイプの編集時に自動公開"
+msgid "Auto publish on creating posts/pages/custom post types"
+msgstr "投稿/ページ/カスタム投稿タイプの作成時に自動公開"
 
 #: admin/settings.php:753 admin/settings.php:762
 msgid "Enabled"
@@ -1131,36 +1153,34 @@ msgid "Disabled"
 msgstr "使用禁止"
 
 #: admin/settings.php:755 admin/settings.php:764
-#, fuzzy
-#| msgid "General Settings"
 msgid "Use metabox settings"
 msgstr "一般設定"
 
 #: admin/settings.php:759
-msgid "Auto publish on creating posts/pages/custom post types"
-msgstr "投稿/ページ/カスタム投稿タイプの作成時に自動公開"
+msgid "Auto publish on editing posts/pages/custom post types"
+msgstr "投稿/ページ/カスタム投稿タイプの編集時に自動公開"
 
-#: admin/settings.php:770
+#: admin/settings.php:769
 msgid "Enable SSL peer verification in remote requests"
 msgstr "リモートリクエストでSSLピア検証を有効にする"
 
-#: admin/settings.php:778
+#: admin/settings.php:777
 msgid "Apply filters during publishing"
 msgstr "公開中にフィルターを適用する"
 
-#: admin/settings.php:815
+#: admin/settings.php:814
 msgid "Other Settings"
 msgstr "その他の設定"
 
-#: admin/settings.php:818
+#: admin/settings.php:817
 msgid "Enable credit link to author"
 msgstr "著者へのクレジットリンクを有効にする"
 
-#: admin/settings.php:827
+#: admin/settings.php:826
 msgid "Enable premium version ads"
 msgstr "プレミアムバージョンの広告を有効にする"
 
-#: admin/settings.php:841
+#: admin/settings.php:840
 msgid "Update Settings"
 msgstr "設定を更新"
 
@@ -1169,3 +1189,10 @@ msgid "Hi there!  Im just a plugin, not much I can do when called directly."
 msgstr ""
 "やあ！私は単なるプラグインであり、直接呼び出されたときにできることはあまりあ"
 "りません。"
+
+#, php-format
+#~ msgid "Fully Featured %s Plugin"
+#~ msgstr "フル機能の%sプラグイン"
+
+#~ msgid "Just 29 USD"
+#~ msgstr "わずか29米ドル"

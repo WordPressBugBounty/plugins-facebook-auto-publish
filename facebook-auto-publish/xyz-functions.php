@@ -48,13 +48,13 @@ if(!function_exists('xyz_fbap_links')){
 		$base = plugin_basename(XYZ_FBAP_PLUGIN_FILE);
 		if ($file == $base) {
 
-			$links[] = '<a href="http://help.xyzscripts.com/docs/facebook-auto-publish/faq/"  title="FAQ">FAQ</a>';
-			$links[] = '<a href="http://help.xyzscripts.com/docs/facebook-auto-publish/"  title="Read Me">README</a>';
-			$links[] = '<a href="https://xyzscripts.com/support/" class="xyz_support" title="Support"></a>';
-			$links[] = '<a href="https://twitter.com/xyzscripts" class="xyz_twitt" title="Follow us on twitter"></a>';
-			$links[] = '<a href="https://www.facebook.com/xyzscripts" class="xyz_fbook" title="Facebook"></a>';
-		//	$links[] = '<a href="https://plus.google.com/+Xyzscripts" class="xyz_gplus" title="+1"></a>';
-			$links[] = '<a href="https://www.linkedin.com/company/xyzscripts" class="xyz_linkdin" title="Follow us on linkedIn"></a>';
+			$links[] = '<a href="https://help.xyzscripts.com/docs/facebook-auto-publish/faq/"  title="FAQ">FAQ</a>';
+			$links[] = '<a href="https://help.xyzscripts.com/docs/facebook-auto-publish/"  title="Read Me">README</a>';
+			$links[] = '<a href="https://xyzscripts.com/support/" class="xyz_fbap_support" title="Support"></a>';
+			$links[] = '<a href="https://twitter.com/xyzscripts" class="xyz_fbap_twitt" title="Follow us on twitter"></a>';
+			$links[] = '<a href="https://www.facebook.com/xyzscripts" class="xyz_fbap_fbook" title="Facebook"></a>';
+			$links[] = '<a href="https://www.linkedin.com/company/xyzscripts" class="xyz_fbap_linkdin" title="Follow us on linkedIn"></a>';
+			$links[] = '<a href="https://www.instagram.com/xyz_scripts/" class="xyz_fbap_insta" title="Follow us on Instagram+"></a>';
 		}
 		return $links;
 	}

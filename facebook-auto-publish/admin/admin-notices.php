@@ -42,14 +42,14 @@ $xyz_fbap_notice = wp_nonce_url($xyz_fbap_notice,'fbap-shw');
 	   echo $fbap_thanks_msg; ?></p>
 	
 	<p>
-	<a href="https://wordpress.org/support/plugin/facebook-auto-publish/reviews" class="button xyz_rate_btn" target="_blank"><?php _e('Rate it 5★\'s on wordpress','facebook-auto-publish'); ?> </a>
+	<a href="https://wordpress.org/support/plugin/facebook-auto-publish/reviews" class="button xyz_fbap_rate_btn" target="_blank"><?php _e('Rate it 5★\'s on wordpress','facebook-auto-publish'); ?> </a>
 	<?php if(get_option('xyz_credit_link')=="0") ?>
-		<a href="<?php echo $xyz_fbap_link; ?>" class="button xyz_backlink_btn xyz_blink"> <?php _e('Enable Backlink','facebook-auto-publish'); ?> </a>
+		<a href="<?php echo $xyz_fbap_link; ?>" class="button xyz_fbap_backlink_btn xyz_blink"> <?php _e('Enable Backlink','facebook-auto-publish'); ?> </a>
 	
-	<a class="button xyz_share_btn" onclick=xyz_fbap_shareon_tckbox();> <?php _e('Share on','facebook-auto-publish'); ?> </a>
-		<a href="https://xyzscripts.com/donate/5" class="button xyz_donate_btn" target="_blank"> <?php _e('Donate','facebook-auto-publish'); ?> </a>
+	<a class="button xyz_fbap_share_btn" onclick=xyz_fbap_shareon_tckbox();> <?php _e('Share on','facebook-auto-publish'); ?> </a>
+		<a href="https://xyzscripts.com/donate/5" class="button xyz_fbap_donate_btn" target="_blank"> <?php _e('Donate','facebook-auto-publish'); ?> </a>
 	
-	<a href="<?php echo $xyz_fbap_notice; ?>" class="button xyz_show_btn"> <?php _e('Don\'t Show This Again','facebook-auto-publish'); ?> </a>
+	<a href="<?php echo $xyz_fbap_notice; ?>" class="button xyz_fbap_show_btn"> <?php _e('Don\'t Show This Again','facebook-auto-publish'); ?> </a>
 	</p>
 
 	<div id="show_share_icons_fb" style="display: none;">

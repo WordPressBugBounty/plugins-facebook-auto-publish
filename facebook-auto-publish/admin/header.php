@@ -15,8 +15,8 @@ if($_POST && isset($_POST['xyz_credit_link']))
 	
 	update_option('xyz_credit_link', $xyz_credit_link);
 	?>
-<div class="system_notice_area_style1" id="system_notice_area">
-	<?php _e('Settings updated successfully.','facebook-auto-publish'); ?> &nbsp;&nbsp;&nbsp;<span id="system_notice_area_dismiss"> <?php _e('Dismiss','facebook-auto-publish'); ?> </span>
+<div class="xyz_fbap_system_notice_area_style1" id="xyz_fbap_system_notice_area">
+	<?php _e('Settings updated successfully.','facebook-auto-publish'); ?> &nbsp;&nbsp;&nbsp;<span id="xyz_fbap_system_notice_area_dismiss"> <?php _e('Dismiss','facebook-auto-publish'); ?> </span>
 </div>
 	<?php 
 }
@@ -28,9 +28,9 @@ if(!$_POST && isset($_GET['fbap_blink'])&&isset($_GET['fbap_blink'])=='en'){
 	}
 	update_option('xyz_credit_link',"fbap");
 ?>
-<div class="system_notice_area_style1" id="system_notice_area">
+<div class="xyz_fbap_system_notice_area_style1" id="xyz_fbap_system_notice_area">
 <?php _e('Thank you for enabling backlink.','facebook-auto-publish'); ?>
- &nbsp;&nbsp;&nbsp;<span id="system_notice_area_dismiss"> <?php _e('Dismiss','facebook-auto-publish'); ?> </span>
+ &nbsp;&nbsp;&nbsp;<span id="xyz_fbap_system_notice_area_dismiss"> <?php _e('Dismiss','facebook-auto-publish'); ?> </span>
 </div>
 
 <style type="text/css">
@@ -119,3 +119,4 @@ jQuery(document).ready(function() {
 
 
 <div style="clear: both"></div>
+<div style="border: 1px solid #CCC; border-radius:2px;padding:10px;width:97%;overflow-x: auto;" id="xyz_fbap_content_border">

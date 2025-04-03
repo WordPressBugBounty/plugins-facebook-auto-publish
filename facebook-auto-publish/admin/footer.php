@@ -1,45 +1,56 @@
 <?php
 if( !defined('ABSPATH') ){ exit();}
+?></div>
+<?php
 if(get_option('xyz_fbap_premium_version_ads')==1){?>
-<div id="xyz-wp-fbap-premium">
+<div id="xyz_fbap_wp_premium">
 
-	<div style="float: left; padding: 0 5px">
-		<h2 style="vertical-align: middle;">
-			<a target="_blank" href="https://xyzscripts.com/wordpress-plugins/social-media-auto-publish/features"> 
-				<?php $fbap_smap_plugin="XYZ WP SMAP Premium";
-				$fbap_smap_plugin_msg=sprintf(__('Fully Featured %s Plugin', 'facebook-auto-publish'),$fbap_smap_plugin); 
-				echo $fbap_smap_plugin_msg; ?> </a> - <?php _e('Just 39 USD','facebook-auto-publish'); ?>
-		</h2>
-	</div>
-	<div class="xyz-fbap-buy-now">
-<a target="_blank" href="https://xyzscripts.com/members/product/purchase/XYZWPSMPPRE"><img 
-            src="<?php  echo plugins_url("images/orange_buynow.png",XYZ_FBAP_PLUGIN_FILE); ?>">
-		</a>
-	</div>
-	<div style="float: left; padding: 0 5px">
-	<h2 style="vertical-align: middle;text-shadow: 1px 1px 1px #686868">
-			( <a 	href="<?php echo admin_url('admin.php?page=facebook-auto-publish-about');?>"> <?php _e('Compare Features','facebook-auto-publish') ?> </a> ) 
-	</h2>		
-	</div>
+      <div class="xyz_fbap_ContentCenter">
+
+      <?php printf(
+        __('%sUpgrade to the Fully Featured XYZ WP Social Media Auto Publish Premium Plugin for %sJust 29 USD%s', 'facebook-auto-publish'),
+        '<a href="https://xyzscripts.com/wordpress-plugins/social-media-auto-publish/features" target="_blank">',
+        '</a><span style="font-size: 28px; color:#fbff00;">',
+        '</span>'
+
+        );?>
+  <br/><span style="font-size: 14px;color:#fff;"><?php _e('Unlock advanced scheduling, multi-account publishing, hashtag automation, and seamless social media integration!','facebook-auto-publish'); ?></span>
+
+</div>
+				<div class="clear"></div>
+	<div class="xyz_fbap_ButtonWrap">
+    <div class="xyz_fbap_BuyNowButton">
+        <a target="_blank"
+            href="https://xyzscripts.com/members/product/purchase/XYZWPSMPPRE">🛒 <?php _e('Buy Now','facebook-auto-publish'); ?>
+        </a>
+    </div>
+    <div class="xyz_fbap_CompareButton">
+    <h2>
+            <a 	href="<?php echo admin_url('admin.php?page=facebook-auto-publish-about');?>"> <?php _e('Compare Features','facebook-auto-publish'); ?> </a>
+        </h2>
+    </div>
+		</div>
 </div>
 <?php }?>
 
-<div style="clear: both;"></div>
-<div style="width: 100%">
+<div style="clear: both;">
+</div>
+<div class="xyz_fbap_wrap">
 <div class="xyz_fbap_social_media">
 <h3 class="xyz_fbap_inner_head"> <?php _e('Follow Us','facebook-auto-publish') ?> </h3>
-   <a target="_blank" href="http://facebook.com/xyzscripts" class="xyz_home_fbook"></a>
+   <a target="_blank" href="http://facebook.com/xyzscripts" class="xyz_fbap_home_fbook"></a>
    <a target="_blank" href="http://twitter.com/xyzscripts" class="xyz_home_twitt"></a>
- <a style="margin-right:0px;" target="_blank" href="https://www.linkedin.com/company/xyzscripts" class="xyz_home_linkedin"></a>
+        <a target="_blank" href="https://www.instagram.com/xyz_scripts/" class="xyz_fbap_home_insta"></a>
+ <a style="margin-right:0px;" target="_blank" href="https://www.linkedin.com/company/xyzscripts" class="xyz_fbap_home_linkedin"></a>
 </div>
 
 <div class="xyz_fbap_sugession">
 <h3 class="xyz_fbap_inner_head"> <?php _e('Support','facebook-auto-publish') ?> </h3>
-<p style="width:100%;"><a target="_blank" href="https://xyzscripts.com/donate/5" > <?php _e('Donate','facebook-auto-publish') ?> </a></p>
+
 <p style="width:100%;"><a target="_blank" href="https://xyzscripts.com/support/" > <?php _e('Contact Us','facebook-auto-publish') ?> </a></p>
 <p><a target="_blank" href="https://wordpress.org/support/plugin/facebook-auto-publish/reviews/" > <?php _e('Please Rate Us','facebook-auto-publish') ?>
  </a></p>
-<a target="_blank" href="https://wordpress.org/support/plugin/facebook-auto-publish/reviews/" ><span class="xyz_new_star"></span></a>
+<a target="_blank" href="https://wordpress.org/support/plugin/facebook-auto-publish/reviews/" ><span class="xyz_fbap_new_star"></span></a>
 
 <p style="width:100%;"><a target="_blank" href="https://wordpress.org/support/plugin/facebook-auto-publish/" > <?php _e('Create a ticket at Wordpress forum','facebook-auto-publish') ?> </a></p>
 </div>
@@ -126,15 +137,12 @@ else if (strcasecmp($current_user->user_login ,"admin")!=0 && strcasecmp($curren
 <input class="xyz_fbap_email" name="email"
 type="text" placeholder="<?php _e('Email','facebook-auto-publish'); ?>" style="" value="<?php echo esc_html($current_user->user_email); ?>" />
 
-<input id="xyz_fbap_submit_fbap" class="sbmt_btn" type="submit" value="<?php _e('Subscribe','facebook-auto-publish');?>" name="Submit"  onclick="javascript: if(!verify_fields()) return false; " />
+<input id="xyz_fbap_submit_fbap" class="xyz_fbap_submit_btn" type="submit" value="<?php _e('Subscribe','facebook-auto-publish');?>" name="Submit"  onclick="javascript: if(!verify_fields()) return false; " />
 
 <input type="hidden" name="listName" value="7,1,"/>
 </form>
 </div>   
 
-<div class="xyz_fbap_inmotion">
-   <a target="_blank" href="http://inmotion-hosting.evyy.net/c/1150074/260033/4222">
-   <img src="<?php echo plugins_url()?>/facebook-auto-publish/images/xyz.png" class="xyz_fbap_inmotion_label"></a></div>
 </div>
 
 <div style="clear: both;"></div>

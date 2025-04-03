@@ -296,7 +296,7 @@ function inArray(needle, haystack) {
 	<tr valign="top">
 		<td class="xyz_fbap_pleft15" width="60%"> <?php _e('Enable auto publish post to my facebook account','facebook-auto-publish'); ?>
 		</td>
-		<td  class="switch-field">
+		<td  class="xyz_fbap_switch_field">
 		<label id="xyz_fbap_post_permission_yes"><input type="radio" name="xyz_fbap_post_permission" id="xyz_fbap_post_permission_1" value="1" <?php if($post_permission==1) echo 'checked';?>/> <?php _e('Yes','facebook-auto-publish'); ?> </label>
 		<label id="xyz_fbap_post_permission_no"><input type="radio" name="xyz_fbap_post_permission" id="xyz_fbap_post_permission_0" value="0" <?php if($post_permission==0) echo 'checked';?> /> <?php _e('No','facebook-auto-publish'); ?> </label>
 
@@ -328,8 +328,8 @@ function inArray(needle, haystack) {
 	</tr>
 	<tr valign="top" id="fpabpmf">
 		<td class="xyz_fbap_pleft15"> <?php _e('Message format for posting','facebook-auto-publish'); ?> <img src="<?php echo $heimg?>"
-						onmouseover="detdisplay_fbap('xyz_fbap_informationdiv')" onmouseout="dethide_fbap('xyz_fbap_informationdiv')" style="width:13px;height:auto;">
-						<div id="xyz_fbap_informationdiv" class="fbap_informationdiv" style="display: none;">
+						onmouseover="detdisplay_fbap('xyz_xyz_fbap_informationdiv')" onmouseout="dethide_fbap('xyz_xyz_fbap_informationdiv')" style="width:13px;height:auto;">
+						<div id="xyz_xyz_fbap_informationdiv" class="xyz_fbap_informationdiv" style="display: none;">
 							{POST_TITLE} - <?php _e('Insert the title of your post.','facebook-auto-publish'); ?><br/>
 							{PERMALINK} - <?php _e('Insert the URL where your post is displayed.','facebook-auto-publish'); ?><br/>
 							{POST_EXCERPT} - <?php _e('Insert the excerpt of your post.','facebook-auto-publish'); ?><br/>
