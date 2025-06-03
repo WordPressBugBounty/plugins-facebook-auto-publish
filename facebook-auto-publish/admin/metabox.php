@@ -356,7 +356,7 @@ function inArray(needle, haystack) {
 		</select> </td></tr>
 		
 		<tr id="fpabpmftarea"><td>&nbsp;</td><td>
-		<textarea id="xyz_fbap_message"  name="xyz_fbap_message" style="height:80px !important;" ><?php echo esc_textarea($xyz_fbap_message);?></textarea>
+		<textarea id="xyz_fbap_message"  name="xyz_fbap_message"><?php echo esc_textarea($xyz_fbap_message);?></textarea>
 	</td></tr>
 	
 	</table>

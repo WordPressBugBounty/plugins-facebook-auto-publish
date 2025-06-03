@@ -42,6 +42,22 @@ if(!function_exists('xyz_fbap_plugin_get_version'))
 	}
 }
 
+if(!function_exists('xyz_fbap_run_upgrade_routines'))
+{
+function xyz_fbap_run_upgrade_routines() {
+	global $wpdb;
+	if (is_multisite()) {
+		$blog_ids = $wpdb->get_col("SELECT blog_id FROM $wpdb->blogs");
+		foreach ($blog_ids as $blog_id) {
+			switch_to_blog($blog_id);
+			fbap_install_free();
+			restore_current_blog();
+		}
+	} else {
+		fbap_install_free();
+	}
+}
+}
 
 if(!function_exists('xyz_fbap_links')){
 	function xyz_fbap_links($links, $file) {
