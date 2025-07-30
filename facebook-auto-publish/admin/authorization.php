@@ -131,15 +131,16 @@ if(isset($_COOKIE['xyz_fbap_session_state']) && isset($_REQUEST['state']) && ($_
 			$page_id=$pagearray->id;
 		}
 		update_option('xyz_fbap_fb_numericid',$page_id);
-           header("Location:".admin_url('admin.php?page=facebook-auto-publish-settings&auth=1'));
+		wp_safe_redirect( admin_url( 'admin.php?page=facebook-auto-publish-settings&auth=1' ) );
+		exit;
 	}
 	else
 	{	
 		$xyz_fbap_af=get_option('xyz_fbap_af');
 		
 		if($xyz_fbap_af==1){
-			header("Location:".admin_url('admin.php?page=facebook-auto-publish-settings&msg=3'));
-			exit();
+			wp_safe_redirect( admin_url( 'admin.php?page=facebook-auto-publish-settings&msg=3' ) );
+exit;
 		}
 	}
 }

@@ -107,7 +107,7 @@ if( !defined('ABSPATH') ){ exit();}
 
 		<!-- Posting Options  -->
 	<tr>
-		<td rowspan="17"><h4> <?php _e('Posting Options','facebook-auto-publish'); ?> </h4></td>
+		<td rowspan="18"><h4> <?php _e('Posting Options','facebook-auto-publish'); ?> </h4></td>
 		<td> <?php _e('Publish to facebook pages','facebook-auto-publish'); ?> </td>
 		<td><img src="<?php echo plugins_url("images/tick.png",XYZ_FBAP_PLUGIN_FILE);?>">
 		</td>
@@ -266,7 +266,15 @@ if( !defined('ABSPATH') ){ exit();}
 		<td><img src="<?php echo plugins_url("images/tick.png",XYZ_FBAP_PLUGIN_FILE);?>">
 		</td>
 	</tr>
-	
+	<tr>
+		<td> <?php _e('Carousel post support for Instagram and Telegram','social-media-auto-publish'); ?> </td>
+		<td><img src="<?php echo plugins_url("images/cross.png",XYZ_SMAP_PLUGIN_FILE);?>">
+		</td>
+		<td><img src="<?php echo plugins_url("images/tick.png",XYZ_SMAP_PLUGIN_FILE);?>">
+		</td>
+		<td><img src="<?php echo plugins_url("images/tick.png",XYZ_SMAP_PLUGIN_FILE);?>">
+		</td>
+	</tr>
 	
 	<!-- Image Options  -->
 	

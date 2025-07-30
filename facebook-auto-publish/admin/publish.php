@@ -134,11 +134,14 @@ function xyz_fbap_link_publish($post_ID) {
 	
 	$af=get_option('xyz_fbap_af');
 	
-	$postpp= get_post($post_ID);global $wpdb;
-	$entries0 = $wpdb->get_results($wpdb->prepare( 'SELECT user_nicename,display_name FROM '.$wpdb->base_prefix.'users WHERE ID=%d',$postpp->post_author));
-	foreach( $entries0 as $entry ) {			
-	$user_nicename=$entry->user_nicename;
-	$user_displayname=$entry->display_name;
+	global $wpdb;
+	$display_name =$user_nicename = '';
+	$postpp= get_post($post_ID);
+	$author_id = $postpp->post_author;
+	$user = get_userdata($author_id);
+	if ($user) {
+	$user_displayname = $user->display_name;
+	$user_nicename = $user->user_nicename;
 	}
 	if ($postpp->post_status == 'publish')
 	{
