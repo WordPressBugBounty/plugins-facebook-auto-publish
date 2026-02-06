@@ -5,8 +5,9 @@ add_action('admin_menu', 'xyz_fbap_menu');
 function xyz_fbap_add_admin_scripts()
 {
 	wp_enqueue_script('jquery');
+	$current_version = xyz_fbap_plugin_get_version();
 
-	wp_register_script( 'xyz_notice_script_fbap', plugins_url('facebook-auto-publish/js/notice.js') );
+	wp_register_script( 'xyz_notice_script_fbap', plugins_url('facebook-auto-publish/js/notice.js'),array(),$current_version);
 	wp_enqueue_script( 'xyz_notice_script_fbap' );
 	wp_register_style( 'xyz_fbap_font_style',plugins_url("css/font-awesome.min.css",XYZ_FBAP_PLUGIN_FILE));
 	$fbap_smapsolution_var="SMAPSolutions";
@@ -21,7 +22,7 @@ function xyz_fbap_add_admin_scripts()
 	
 	));	
 	wp_enqueue_style('xyz_fbap_font_style');
-	wp_register_style('xyz_fbap_style', plugins_url('facebook-auto-publish/css/style.css'));
+	wp_register_style('xyz_fbap_style', plugins_url('facebook-auto-publish/css/style.css'),array(),$current_version);
 	wp_enqueue_style('xyz_fbap_style');
 	
 }
@@ -35,7 +36,7 @@ function xyz_fbap_menu()
 	add_menu_page('Facebook Auto Publish - Manage settings', 'WP2Social Auto Publish', 'manage_options', 'facebook-auto-publish-settings', 'xyz_fbap_settings',plugin_dir_url( XYZ_FBAP_PLUGIN_FILE ) . 'images/fbap.png');
 	add_submenu_page('facebook-auto-publish-settings', 'Facebook Auto Publish - Manage settings', __('Settings','facebook-auto-publish'), 'manage_options', 'facebook-auto-publish-settings' ,'xyz_fbap_settings'); // 8 for admin
 	if(get_option('xyz_fbap_xyzscripts_hash_val')!=''&& get_option('xyz_fbap_xyzscripts_user_id')!='')
-	    add_submenu_page('facebook-auto-publish-settings', 'Facebook Auto Publish - Manage Authorizations',__('Manage Authorizations','facebook-auto-publish'), 'manage_options', 'facebook-auto-publish-manage-authorizations' ,'xyz_fbap_manage_authorizations');
+	    add_submenu_page('facebook-auto-publish-settings', 'Facebook Auto Publish - SmapSolutions Authorizations',__('SmapSolutions Authorizations','facebook-auto-publish'), 'manage_options', 'facebook-auto-publish-manage-authorizations' ,'xyz_fbap_manage_authorizations');
 	add_submenu_page('facebook-auto-publish-settings', 'Facebook Auto Publish - Logs', __('Logs','facebook-auto-publish'), 'manage_options', 'facebook-auto-publish-log' ,'xyz_fbap_logs');
 	add_submenu_page('facebook-auto-publish-settings', 'Facebook Auto Publish - About', __('About','facebook-auto-publish'), 'manage_options', 'facebook-auto-publish-about' ,'xyz_fbap_about'); // 8 for admin
 	add_submenu_page('facebook-auto-publish-settings', 'Facebook Auto Publish - Suggest Feature', __('Suggest a Feature','facebook-auto-publish'), 'manage_options', 'facebook-auto-publish-suggest-feature' ,'xyz_fbap_suggest_feature');

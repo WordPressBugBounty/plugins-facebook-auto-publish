@@ -36,6 +36,14 @@ if(get_option('xyz_fbap_premium_version_ads')==1){?>
 <div style="clear: both;">
 </div>
 <div class="xyz_fbap_wrap">
+<div class="xyz-fbap-footer-contact">
+🚀 <span style="font-style: italic;font-size:larger;"><?php _e('We are available for custom development','facebook-auto-publish'); ?></span> — 
+    <a href="https://xyzscripts.com/support/" target="_blank">
+    <?php _e('Get a quote','facebook-auto-publish'); ?>
+    </a>
+</div>
+</div>
+<div class="xyz_fbap_wrap">
 <div class="xyz_fbap_social_media">
 <h3 class="xyz_fbap_inner_head"> <?php _e('Follow Us','facebook-auto-publish') ?> </h3>
    <a target="_blank" href="http://facebook.com/xyzscripts" class="xyz_fbap_home_fbook"></a>

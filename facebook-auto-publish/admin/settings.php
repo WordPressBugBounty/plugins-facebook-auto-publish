@@ -932,8 +932,21 @@ jQuery(document).ready(function() {
 		  	jQuery('#xyz_fbap_conn_to_xyzscripts').hide();
 		   	}
 	   });
+		// Secure message listener with origin validation
    window.addEventListener('message', function(e) {
+		// Allowed origins (add your authorized app domains here)
+		const xyz_fbap_allowed_origins = [
+			window.location.origin, // same site
+			"https://smap.xyzscripts.com",
+			"https://authorize.smapsolutions.com" // your hosted authorization service
+		];
+		if (!xyz_fbap_allowed_origins.includes(e.origin)) {
+				console.warn('Blocked message from unauthorized origin:', e.origin);
+				return;
+			}
+			if (typeof e.data === 'string') {
 	   xyz_fbap_ProcessChildMessage_2(e.data);
+			}
 	} , false);
 }); 
 
@@ -1052,13 +1065,23 @@ function fbap_popup_connect_to_xyzscripts()
 	return false;	
 }
 function xyz_fbap_ProcessChildMessage_2(message) {
+    if (typeof message !== 'string' || message.length === 0) return;
 	var messageType = message.slice(0,5);
-	if(messageType==="error")
-	{
-		message=message.substring(6);
-		if(jQuery('#xyz_fbap_system_notice_area').length==0)
+    if (messageType === "error") {
+        var message = message.substring(6);
+
+        // Remove any potentially malicious tags 
+		message = message.replace(/<script[^>]*?>.*?<\/script>/gi, '');
+        message = message.replace(/on\w+="[^"]*"/gi, '');
+        message = message.replace(/javascript:/gi, '');
+		message = message.replace(/<[^>]*>?/gm, '');
+        if (jQuery('#xyz_fbap_system_notice_area').length === 0) {
 		jQuery('body').append('<div class="xyz_fbap_system_notice_area_style0" id="xyz_fbap_system_notice_area"></div>');
-		jQuery("#xyz_fbap_system_notice_area").html(message+' <span id="xyz_fbap_system_notice_area_dismiss"> <?php _e('Dismiss','facebook-auto-publish'); ?> </span>');
+        }
+        // .text() instead of .html() to prevent XSS
+        jQuery("#xyz_fbap_system_notice_area")
+            .text(message + ' ')
+            .append('<span id="xyz_fbap_system_notice_area_dismiss"> Dismiss </span>');
 		jQuery("#xyz_fbap_system_notice_area").show();
 		jQuery('#xyz_fbap_system_notice_area_dismiss').click(function() {
 			jQuery('#xyz_fbap_system_notice_area').animate({
@@ -1066,6 +1089,7 @@ function xyz_fbap_ProcessChildMessage_2(message) {
 				height : 'hide'
 			}, 500);
 		});
+			return;
 	}
 	var obj1=jQuery.parseJSON(message);
 	if(obj1.content &&  obj1.userid && obj1.xyzscripts_user)
@@ -1103,6 +1127,10 @@ function xyz_fbap_ProcessChildMessage_2(message) {
 	    list=list+"<input type='checkbox' value='"+key+"' checked='checked' disabled>"+val+"<br>";
 	  }
 	}
+	var expiry_time = 0;
+	if (obj1.fb_expiry_time) {
+		expiry_time = obj1.fb_expiry_time;
+	}
 	jQuery("#xyz_fbap_page_names").val(JSON.stringify(obj));
 	jQuery("#xyz_fbap_selected_pages").html(list);
 	jQuery("#xyz_fbap_selected_pages_tr").show();
@@ -1116,6 +1144,7 @@ function xyz_fbap_ProcessChildMessage_2(message) {
 			smap_secretkey: secretkey,
 			xyz_fb_numericid: xyz_fbap_fb_numericid,
 			smapsoln_userid:smapsoln_userid,
+			expiry_time:expiry_time,
 			dataType: 'json',
 			_wpnonce: xyz_fbap_selected_pages_nonce
 		};			

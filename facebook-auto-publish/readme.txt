@@ -3,8 +3,8 @@ Contributors: f1logic
 Donate link: https://xyzscripts.com/donate/
 Tags:  facebook, facebook auto publish,wp2fb auto publish,wp2social,wp2social auto publish,wp facebook auto publish,publish post to facebook, add link to facebook, facebook publishing, post to facebook, post to fb, social media auto publish, social media publishing, social network auto publish, social media, social network
 Requires at least: 3.0																				
-Tested up to: 6.8.2
-Stable tag: 2.4.7
+Tested up to: 6.9
+Stable tag: 2.4.10
 License: GPLv2 or later
 
 Publish posts automatically to Facebook page.
@@ -129,6 +129,17 @@ SSL peer verification may not be functioning in your server. Please turn off SSL
 4. Auto publish logs.
 
 == Changelog ==
+
+= WP2Social Auto Publish 2.4.10 =
+* Added vulnerability fix reported by WP Plugin Review Team.
+
+= WP2Social Auto Publish 2.4.9 =
+* Fixed: Minor constant name typo causing an error in the About page
+
+= WP2Social Auto Publish 2.4.8 =
+* SMAPSolutions package expiry alert added
+* Minor bug fixes and code tweaks
+* Fixed a security issue identified through responsible disclosure.
 
 = WP2Social Auto Publish 2.4.7 =
 * Updated redirects to use wp_safe_redirect() for improved security

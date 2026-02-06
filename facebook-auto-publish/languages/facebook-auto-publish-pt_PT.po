@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: multilang\n"
-"POT-Creation-Date: 2025-07-29 12:53+0530\n"
-"PO-Revision-Date: 2025-07-29 12:54+0530\n"
+"POT-Creation-Date: 2025-10-28 16:42+0530\n"
+"PO-Revision-Date: 2025-10-28 16:42+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt_PT\n"
@@ -25,7 +25,7 @@ msgstr ""
 "X-Poedit-SearchPath-9: admin/fbap-suggest-feature.php\n"
 "X-Poedit-SearchPath-10: admin/destruction.php\n"
 "X-Poedit-SearchPath-11: admin/authorization.php\n"
-"X-Poedit-SearchPath-12: admin/ajax-backlink.php\n"
+"X-Poedit-SearchPath-12: admin/ajax-actions.php\n"
 "X-Poedit-SearchPath-13: admin/admin-notices.php\n"
 "X-Poedit-SearchPath-14: admin/about.php\n"
 "X-Poedit-SearchPath-15: facebook-auto-publish.php\n"
@@ -454,6 +454,21 @@ msgstr "Doar"
 msgid "Don't Show This Again"
 msgstr "Não mostre isso de novo"
 
+#: admin/admin-notices.php:114
+#, php-format
+msgid "SMAP Solutions %s package expires in 30 days."
+msgstr "O pacote SMAP Solutions %s expira em 30 dias."
+
+#: admin/admin-notices.php:121
+#, php-format
+msgid "SMAP Solutions %s package expires in 1 week!"
+msgstr "O pacote SMAP Solutions %s expira em 1 semana!"
+
+#: admin/admin-notices.php:128
+#, php-format
+msgid "SMAP Solutions %s package has expired!"
+msgstr "O pacote %s do SMAP Solutions expirou!"
+
 #: admin/fbap-suggest-feature.php:10
 msgid "Thank you for the suggestion."
 msgstr "Obrigado pela sugestão."
@@ -461,7 +476,7 @@ msgstr "Obrigado pela sugestão."
 #: admin/fbap-suggest-feature.php:11 admin/fbap-suggest-feature.php:19
 #: admin/fbap-suggest-feature.php:27 admin/header.php:19 admin/header.php:33
 #: admin/header.php:49 admin/manage-authorizations.php:9
-#: admin/manage-authorizations.php:134 admin/manage-authorizations.php:194
+#: admin/manage-authorizations.php:227 admin/manage-authorizations.php:287
 #: admin/settings.php:32 admin/settings.php:130 admin/settings.php:138
 #: admin/settings.php:147 admin/settings.php:158 admin/settings.php:167
 #: admin/settings.php:182 admin/settings.php:1026 admin/settings.php:1061
@@ -515,46 +530,54 @@ msgid "Compare Features"
 msgstr "Comparar recursos"
 
 #: admin/footer.php:40
+msgid "We are available for custom development"
+msgstr "Estamos disponíveis para desenvolvimento personalizado"
+
+#: admin/footer.php:42
+msgid "Get a quote"
+msgstr "Obter uma cotação"
+
+#: admin/footer.php:48
 msgid "Follow Us"
 msgstr "Siga-nos"
 
-#: admin/footer.php:48
+#: admin/footer.php:56
 msgid "Support"
 msgstr "Apoiar"
 
-#: admin/footer.php:50
+#: admin/footer.php:58
 msgid "Contact Us"
 msgstr "Contate-Nos"
 
-#: admin/footer.php:51
+#: admin/footer.php:59
 msgid "Please Rate Us"
 msgstr "Avalie-nos"
 
-#: admin/footer.php:55
+#: admin/footer.php:63
 msgid "Create a ticket at Wordpress forum"
 msgstr "Criar um ticket no fórum Wordpress"
 
-#: admin/footer.php:58
+#: admin/footer.php:66
 msgid "Stay tuned for our updates"
 msgstr "Fique atento às nossas atualizações"
 
-#: admin/footer.php:123
+#: admin/footer.php:131
 msgid "Name"
 msgstr "Nome"
 
-#: admin/footer.php:138
+#: admin/footer.php:146
 msgid "Email"
 msgstr "E-mail"
 
-#: admin/footer.php:140
+#: admin/footer.php:148
 msgid "Subscribe"
 msgstr "Subscrever"
 
-#: admin/footer.php:152
+#: admin/footer.php:160
 msgid "Our Plugins"
 msgstr "Nossos plug-ins"
 
-#: admin/footer.php:173
+#: admin/footer.php:181
 msgid "Powered by"
 msgstr "Distribuído por"
 
@@ -582,7 +605,7 @@ msgstr "Perguntas frequentes"
 msgid "Readme"
 msgstr "Leia-me"
 
-#: admin/header.php:110 admin/menu.php:40
+#: admin/header.php:110 admin/menu.php:41
 msgid "About"
 msgstr "Cerca de"
 
@@ -637,135 +660,139 @@ msgstr ""
 "Autorize o aplicativo %s nas configurações do Facebook para acessar esta "
 "página."
 
-#: admin/manage-authorizations.php:239 admin/menu.php:38
+#: admin/manage-authorizations.php:332
 msgid "Manage Authorizations"
 msgstr "Gerenciar autorizações"
 
-#: admin/manage-authorizations.php:263
+#: admin/manage-authorizations.php:360
 msgid "Current Plan:"
 msgstr "Plano atual:"
 
-#: admin/manage-authorizations.php:265
+#: admin/manage-authorizations.php:361
 msgid "Allowed Facebook users:"
 msgstr "Usuários permitidos do Facebook:"
 
-#: admin/manage-authorizations.php:266
+#: admin/manage-authorizations.php:362
 msgid "API limit per account :"
 msgstr "Limite de API por conta:"
 
-#: admin/manage-authorizations.php:266
+#: admin/manage-authorizations.php:362
 msgid "per hour"
 msgstr "por hora"
 
-#: admin/manage-authorizations.php:267
+#: admin/manage-authorizations.php:363
 msgid "Package Expiry :"
 msgstr "Validade do pacote:"
 
-#: admin/manage-authorizations.php:268
+#: admin/manage-authorizations.php:364
 msgid "Package Status :"
 msgstr "Status do pacote:"
 
-#: admin/manage-authorizations.php:277
+#: admin/manage-authorizations.php:373
 msgid "Upgrade/Renew"
 msgstr "Atualizar/Renovar"
 
-#: admin/manage-authorizations.php:284
+#: admin/manage-authorizations.php:380
 msgid "Show all entries"
 msgstr "Mostrar todas as entradas"
 
-#: admin/manage-authorizations.php:285
+#: admin/manage-authorizations.php:381
 msgid "Show entries from current wp installation"
 msgstr "Mostrar entradas da instalação wp atual"
 
-#: admin/manage-authorizations.php:286
+#: admin/manage-authorizations.php:382
 msgid "Show entries from other wp installations"
 msgstr "Mostrar entradas de outras instalações wp"
 
-#: admin/manage-authorizations.php:292
+#: admin/manage-authorizations.php:388
 msgid "Facebook username"
 msgstr "Nome de usuário do facebook"
 
-#: admin/manage-authorizations.php:293
+#: admin/manage-authorizations.php:389
 msgid "Selected pages"
 msgstr "Páginas selecionadas"
 
-#: admin/manage-authorizations.php:294
+#: admin/manage-authorizations.php:390
 msgid "Selected groups"
 msgstr "Grupos selecionados"
 
-#: admin/manage-authorizations.php:296
+#: admin/manage-authorizations.php:392
 #, php-format
 msgid "%s url"
 msgstr "%s URL"
 
-#: admin/manage-authorizations.php:299
+#: admin/manage-authorizations.php:395
 msgid "Plugin"
 msgstr "Plugin"
 
-#: admin/manage-authorizations.php:301
+#: admin/manage-authorizations.php:397
 #, php-format
 msgid "Account ID %s"
 msgstr "ID da conta %s"
 
-#: admin/manage-authorizations.php:303
+#: admin/manage-authorizations.php:399
 msgid "Action"
 msgstr "Açao"
 
-#: admin/manage-authorizations.php:338
+#: admin/manage-authorizations.php:434
 msgid "Not Applicable"
 msgstr "Não aplicável"
 
-#: admin/manage-authorizations.php:345 admin/manage-authorizations.php:368
+#: admin/manage-authorizations.php:441 admin/manage-authorizations.php:464
 msgid "Delete"
 msgstr "Excluir"
 
-#: admin/manage-authorizations.php:358
+#: admin/manage-authorizations.php:454
 msgid "(Inactive)"
 msgstr "(Inativo)"
 
-#: admin/manage-authorizations.php:378
+#: admin/manage-authorizations.php:474
 msgid "No Authorizations"
 msgstr "Sem autorizações"
 
-#: admin/manage-authorizations.php:384
+#: admin/manage-authorizations.php:480
 msgid "Unable to connect. Please check your curl and firewall settings"
 msgstr "Incapaz de conectar. Verifique suas configurações de curl e firewall"
 
-#: admin/menu.php:15
+#: admin/menu.php:16
 msgid "Please check whether the email is correct."
 msgstr "Por favor, verifique se o e-mail está correto."
 
-#: admin/menu.php:16
+#: admin/menu.php:17
 msgid "Select atleast one list."
 msgstr "Selecione pelo menos uma lista."
 
-#: admin/menu.php:17
+#: admin/menu.php:18
 msgid "You do not have sufficient permissions"
 msgstr "Você não tem permissões suficientes"
 
-#: admin/menu.php:18
+#: admin/menu.php:19
 #, php-format
 msgid "Account details successfully deleted from %s"
 msgstr "Detalhes da conta excluídos com sucesso de %s"
 
-#: admin/menu.php:19
+#: admin/menu.php:20
 msgid "Thank you for enabling backlink !"
 msgstr "Obrigado por habilitar o backlink !"
 
-#: admin/menu.php:20
+#: admin/menu.php:21
 #, php-format
 msgid "Please connect your %s member account"
 msgstr "Por favor, conecte sua conta de membro %s"
 
-#: admin/menu.php:36
+#: admin/menu.php:37
 msgid "Settings"
 msgstr "Configurações"
 
 #: admin/menu.php:39
+msgid "SmapSolutions Authorizations"
+msgstr "Autorizações SmapSolutions"
+
+#: admin/menu.php:40
 msgid "Logs"
 msgstr "Histórica"
 
-#: admin/menu.php:41
+#: admin/menu.php:42
 msgid "Suggest a Feature"
 msgstr "Sugerir um recurso"
 

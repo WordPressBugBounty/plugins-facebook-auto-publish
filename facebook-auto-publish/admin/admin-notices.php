@@ -72,3 +72,110 @@ if($fbap_installed_date < ( time() - (20*24*60*60) ))
 		add_action('admin_notices', 'wp_fbap_admin_notice');
 	}
 }
+/// --- SMAP Solutions Notice Section ---
+function xyz_fbap_smapsolutions_admin_notice() {
+    if (!current_user_can('administrator')) {
+        return;
+    }
+    // --- SMAP Solutions Expiry Notices ---
+    $expiry_data = get_option('xyz_fbap_smapsolutions_pack_expiry', []);
+    if (empty($expiry_data)) 
+        return;
+    // Remove invalid or empty timestamps
+    $expiry_data = array_filter($expiry_data, function($ts) {
+        return !empty($ts) && is_numeric($ts);
+    });
+    if (empty($expiry_data)) 
+        return;
+    $now = current_time('timestamp');
+    $messages = [];
+    $displayed_services = [];
+    // --- Only facebook Service ---
+    $service = 'smapsolution_facebook_expiry';
+    $expiry  = $expiry_data[$service] ?? null;
+    if (empty($expiry)) 
+        return;
+    $service_name = xyz_fbap_format_smapsolutions_service_name($service);
+    $dismissed_stage = get_user_meta(get_current_user_id(), "xyz_fbap_notice_dismissed_$service", true);
+    $diff = $expiry - $now;
+    // --- Individual Package Notice Conditions ---
+    if ($diff <= 30 * DAY_IN_SECONDS && $diff > 7 * DAY_IN_SECONDS && $dismissed_stage !== '30days') {
+        $messages[] = sprintf(
+            __("SMAP Solutions %s package expires in 30 days.", "facebook-auto-publish"),
+            $service_name
+        );
+        $displayed_services[] = $service;
+    } elseif ($diff <= 7 * DAY_IN_SECONDS && $diff > 0 && $dismissed_stage !== '1week') {
+        $messages[] = sprintf(
+            __("SMAP Solutions %s package expires in 1 week!", "facebook-auto-publish"),
+            $service_name
+        );
+        $displayed_services[] = $service;
+    } elseif ($diff <= 0 && $dismissed_stage !== 'expired') {
+        $messages[] = sprintf(
+            __("SMAP Solutions %s package has expired!", "facebook-auto-publish"),
+            $service_name
+        );
+        $displayed_services[] = $service;
+    }
+    // --- Display the Notice ---
+    if (!empty($messages)) {
+        $dismiss_url = wp_nonce_url(
+            add_query_arg([
+                'xyz_fbap_dismiss' => 1,
+                'services' => implode(',', $displayed_services)
+            ]),
+            'xyz_fbap_dismiss_notice'
+        );
+        echo '<div class="notice notice-warning is-dismissible">';
+        echo '<p style="color:#2271b1;padding:0;margin:2px 0;"><strong>' 
+             . esc_html__("SMAP Solutions Notice:", "facebook-auto-publish") 
+             . '</strong></p>';
+        foreach ($messages as $msg) {
+            echo '<span style="color:indianred;"><strong>' . esc_html($msg) . '</strong></span><br/>';
+        }
+        echo '<p style="text-align:right;padding:0;margin:2px 0;font-weight:bold;">
+                <a href="' . esc_url($dismiss_url) . '">' 
+                . esc_html__("Don't show this again", "facebook-auto-publish") 
+              . '</a></p>';
+        echo '</div>';
+    }
+}
+// --- Format Service Name ---
+function xyz_fbap_format_smapsolutions_service_name($service) {
+    // Remove prefix
+    $name = str_replace('smapsolution_', '', $service);
+    // Remove _expiry suffix
+    $name = str_replace('_expiry', '', $name);
+    return ucfirst($name);
+}
+add_action('admin_notices', 'xyz_fbap_smapsolutions_admin_notice');
+// --- Handle Dismissal Only for facebook Service ---
+add_action('admin_init', function() {
+    if (isset($_GET['xyz_fbap_dismiss']) && check_admin_referer('xyz_fbap_dismiss_notice')) {
+        $expiry_data = get_option('xyz_fbap_smapsolutions_pack_expiry', []);
+        $now = current_time('timestamp');
+        // --- Only facebook Service ---
+        $service = 'smapsolution_facebook_expiry';
+        if (!isset($expiry_data[$service])) {
+            return;
+        }
+        $expiry = $expiry_data[$service];
+        $diff = $expiry - $now;
+        $dismissed_stage = get_user_meta(get_current_user_id(), "xyz_fbap_notice_dismissed_$service", true);
+        // --- 30 Days (30 > diff > 7) ---
+        if ($diff <= 30 * DAY_IN_SECONDS && $diff > 7 * DAY_IN_SECONDS && $dismissed_stage !== '30days') {
+            update_user_meta(get_current_user_id(), "xyz_fbap_notice_dismissed_$service", '30days');
+        } 
+        // --- 1 Week (7 > diff > 0) ---
+        elseif ($diff <= 7 * DAY_IN_SECONDS && $diff > 0 && $dismissed_stage !== '1week') {
+            update_user_meta(get_current_user_id(), "xyz_fbap_notice_dismissed_$service", '1week');
+        } 
+        // --- Expired (diff <= 0) ---
+        elseif ($diff <= 0 && $dismissed_stage !== 'expired') {
+            update_user_meta(get_current_user_id(), "xyz_fbap_notice_dismissed_$service", 'expired');
+        }
+        wp_safe_redirect(remove_query_arg(['xyz_fbap_dismiss', 'services']));
+        exit;
+    }
+});
