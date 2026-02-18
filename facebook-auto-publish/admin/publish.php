@@ -1,22 +1,26 @@
 <?php 
 if( !defined('ABSPATH') ){ exit();}
-/*add_action('publish_post', 'xyz_fbap_link_publish');
-add_action('publish_page', 'xyz_fbap_link_publish');
-$xyz_fbap_future_to_publish=get_option('xyz_fbap_future_to_publish');
+add_action('save_post', 'xyz_fbap_save_metabox_meta');
+function xyz_fbap_save_metabox_meta($post_id) {
 
-if($xyz_fbap_future_to_publish==1)
-	add_action('future_to_publish', 'xyz_link_fbap_future_to_publish');
+    if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) return;
+    if (!current_user_can('edit_post', $post_id)) return;
 
-function xyz_link_fbap_future_to_publish($post){
-	$postid =$post->ID;
-	xyz_fbap_link_publish($postid);
-}*/
+    if (isset($_POST['xyz_fbap_post_permission'])) {
+        $data = array(
+            'post_fb_permission'       => $_POST['xyz_fbap_post_permission'],
+            'xyz_fbap_po_method'   => $_POST['xyz_fbap_po_method'] ?? '',
+            'xyz_fbap_message'       => $_POST['xyz_fbap_message'] ?? '',
+        );
+        update_post_meta($post_id, 'xyz_fbap_future_to_publish', $data);
+    }
+}
 //////////////
 add_action(  'transition_post_status',  'xyz_link_fbap_future_to_publish', 10, 3 );
 
 function xyz_link_fbap_future_to_publish($new_status, $old_status, $post){
 	
-	if (isset($_GET['_locale']) && empty($_POST))
+	if (isset($_GET['_locale']) && (empty($_POST) || empty($post)))
 		return ;
 	
 	if(!isset($GLOBALS['fbap_dup_publish']))
@@ -210,7 +214,7 @@ function xyz_fbap_link_publish($post_ID) {
 		
 		}
 		$get_post_meta=get_post_meta($post_ID,"xyz_fbap",true);
-		if($get_post_meta!=1)
+		if (get_post_status($post_ID) === 'publish' && ! $get_post_meta)
 			add_post_meta($post_ID, "xyz_fbap", "1");
 		
 		include_once ABSPATH.'wp-admin/includes/plugin.php';
