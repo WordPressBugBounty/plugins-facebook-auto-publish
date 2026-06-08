@@ -8,9 +8,9 @@ function xyz_fbap_save_metabox_meta($post_id) {
 
     if (isset($_POST['xyz_fbap_post_permission'])) {
         $data = array(
-            'post_fb_permission'       => $_POST['xyz_fbap_post_permission'],
-            'xyz_fbap_po_method'   => $_POST['xyz_fbap_po_method'] ?? '',
-            'xyz_fbap_message'       => $_POST['xyz_fbap_message'] ?? '',
+			'post_fb_permission' => isset($_POST['xyz_fbap_post_permission']) ? sanitize_text_field($_POST['xyz_fbap_post_permission']) : '',
+			'xyz_fbap_po_method' => isset($_POST['xyz_fbap_po_method']) ? sanitize_text_field($_POST['xyz_fbap_po_method']) : '',
+			'xyz_fbap_message' => sanitize_textarea_field($_POST['xyz_fbap_message'] ?? ''),
         );
         update_post_meta($post_id, 'xyz_fbap_future_to_publish', $data);
     }
@@ -242,8 +242,7 @@ function xyz_fbap_link_publish($post_ID) {
 			$content = apply_filters('the_content', $content);
 		$content = html_entity_decode($content, ENT_QUOTES, get_bloginfo('charset'));
 		$excerpt = $postpp->post_excerpt;
-		if($exc_flag==1)
-			$excerpt = apply_filters('the_excerpt', $excerpt);
+		
 		$excerpt = html_entity_decode($excerpt, ENT_QUOTES, get_bloginfo('charset'));
 		$content = preg_replace('/<script\b[^>]*>(.*?)<\/script>/is', "", $content);
 		$content=  preg_replace("/\\[caption.*?\\].*?\\[.caption\\]/is", '', $content);
@@ -266,6 +265,8 @@ function xyz_fbap_link_publish($post_ID) {
 			$excerpt=strip_tags($excerpt);
 			$excerpt=strip_shortcodes($excerpt);
 		}
+		if($exc_flag==1)
+			$excerpt = apply_filters('the_excerpt', $excerpt);
 		$description = $content;
 		$description_org=$description;
 		
