@@ -29,18 +29,18 @@ function xyz_fbap_ajax_backlink_call() {
 add_action('wp_ajax_xyz_fbap_selected_pages_auto_update', 'xyz_fbap_selected_pages_auto_update_fn');
 function xyz_fbap_selected_pages_auto_update_fn() {
 	global $wpdb;
-	if(current_user_can('administrator')){
-	if($_POST){
-		if (! isset( $_POST['_wpnonce'] )|| ! wp_verify_nonce( $_POST['_wpnonce'],'xyz_fbap_selected_pages_nonce' ))
-		{
-			echo 1;die;
+	if ( current_user_can( 'manage_options' ) ) {
+		if ( isset( $_POST['pages'] ) ) {
+			if ( ! check_ajax_referer( 'xyz_fbap_selected_pages_nonce', '_wpnonce', false ) ) {
+				echo 1;
+				die;
 		}
-		if(isset($_POST)){
-			$pages=stripslashes($_POST['pages']);
-			$fbap_sec_key=$_POST['smap_secretkey'];
-			$xyz_fbap_fb_numericid=$_POST['xyz_fb_numericid'];
-			$xyz_fbap_smapsoln_userid=$_POST['smapsoln_userid'];
-			$expiry_time=$_POST['expiry_time'];
+
+			$pages = sanitize_text_field( wp_unslash( $_POST['pages'] ) );
+			$fbap_sec_key = sanitize_text_field( wp_unslash( $_POST['smap_secretkey'] ) );
+			$xyz_fbap_fb_numericid = sanitize_text_field( wp_unslash( $_POST['xyz_fb_numericid'] ) );
+			$xyz_fbap_smapsoln_userid = sanitize_text_field( wp_unslash( $_POST['smapsoln_userid'] ) );
+			$expiry_time = sanitize_text_field( wp_unslash( $_POST['expiry_time'] ) );
 			xyz_fbap_update_package_expiry($expiry_time);
 
 			update_option('xyz_fbap_page_names',$pages);
@@ -50,7 +50,7 @@ function xyz_fbap_selected_pages_auto_update_fn() {
 			update_option('xyz_fbap_smapsoln_userid', $xyz_fbap_smapsoln_userid);
 		}
 	}
-}
+
 	die();
 }
 add_action('wp_ajax_xyz_fbap_xyzscripts_accinfo_auto_update', 'xyz_fbap_xyzscripts_accinfo_auto_update_fn');

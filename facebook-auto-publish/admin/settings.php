@@ -531,7 +531,7 @@ function dethide_fbap(id)
 					foreach ($xyz_fbap_page_names_array as $sel_pageid=>$sel_pagename)
 					{
 					?>
-				 <input type="checkbox" class="selpages" name="fbap_pages_list[]"  value="<?php echo $sel_pageid;?>" disabled checked="checked"><?php echo $sel_pagename; ?><br>
+				 <input type="checkbox" class="selpages" name="fbap_pages_list[]"  value="<?php echo esc_attr($sel_pageid);?>" disabled checked="checked"><?php echo esc_html($sel_pagename); ?><br>
 					<?php }}
 				?>
 				</div>
